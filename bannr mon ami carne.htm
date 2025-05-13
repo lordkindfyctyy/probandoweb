@@ -1,0 +1,2520 @@
+<!DOCTYPE html>
+<html lang="es" class="loading-site no-js">
+<head>
+	<meta charset="UTF-8" />
+<script type="text/javascript" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwogdmFyIGdmb3JtO2dmb3JtfHwoZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigiZ2Zvcm1fbWFpbl9zY3JpcHRzX2xvYWRlZCIsZnVuY3Rpb24oKXtnZm9ybS5zY3JpcHRzTG9hZGVkPSEwfSksZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigiZ2Zvcm0vdGhlbWUvc2NyaXB0c19sb2FkZWQiLGZ1bmN0aW9uKCl7Z2Zvcm0udGhlbWVTY3JpcHRzTG9hZGVkPSEwfSksd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoIkRPTUNvbnRlbnRMb2FkZWQiLGZ1bmN0aW9uKCl7Z2Zvcm0uZG9tTG9hZGVkPSEwfSksZ2Zvcm09e2RvbUxvYWRlZDohMSxzY3JpcHRzTG9hZGVkOiExLHRoZW1lU2NyaXB0c0xvYWRlZDohMSxpc0Zvcm1FZGl0b3I6KCk9PiJmdW5jdGlvbiI9PXR5cGVvZiBJbml0aWFsaXplRWRpdG9yLGNhbGxJZkxvYWRlZDpmdW5jdGlvbihvKXtyZXR1cm4hKCFnZm9ybS5kb21Mb2FkZWR8fCFnZm9ybS5zY3JpcHRzTG9hZGVkfHwhZ2Zvcm0udGhlbWVTY3JpcHRzTG9hZGVkJiYhZ2Zvcm0uaXNGb3JtRWRpdG9yKCl8fChnZm9ybS5pc0Zvcm1FZGl0b3IoKSYmY29uc29sZS53YXJuKCJUaGUgdXNlIG9mIGdmb3JtLmluaXRpYWxpemVPbkxvYWRlZCgpIGlzIGRlcHJlY2F0ZWQgaW4gdGhlIGZvcm0gZWRpdG9yIGNvbnRleHQgYW5kIHdpbGwgYmUgcmVtb3ZlZCBpbiBHcmF2aXR5IEZvcm1zIDMuMS4iKSxvKCksMCkpfSxpbml0aWFsaXplT25Mb2FkZWQ6ZnVuY3Rpb24obyl7Z2Zvcm0uY2FsbElmTG9hZGVkKG8pfHwoZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigiZ2Zvcm1fbWFpbl9zY3JpcHRzX2xvYWRlZCIsKCk9PntnZm9ybS5zY3JpcHRzTG9hZGVkPSEwLGdmb3JtLmNhbGxJZkxvYWRlZChvKX0pLGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoImdmb3JtL3RoZW1lL3NjcmlwdHNfbG9hZGVkIiwoKT0+e2dmb3JtLnRoZW1lU2NyaXB0c0xvYWRlZD0hMCxnZm9ybS5jYWxsSWZMb2FkZWQobyl9KSx3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigiRE9NQ29udGVudExvYWRlZCIsKCk9PntnZm9ybS5kb21Mb2FkZWQ9ITAsZ2Zvcm0uY2FsbElmTG9hZGVkKG8pfSkpfSxob29rczp7YWN0aW9uOnt9LGZpbHRlcjp7fX0sYWRkQWN0aW9uOmZ1bmN0aW9uKG8scixlLHQpe2dmb3JtLmFkZEhvb2soImFjdGlvbiIsbyxyLGUsdCl9LGFkZEZpbHRlcjpmdW5jdGlvbihvLHIsZSx0KXtnZm9ybS5hZGRIb29rKCJmaWx0ZXIiLG8scixlLHQpfSxkb0FjdGlvbjpmdW5jdGlvbihvKXtnZm9ybS5kb0hvb2soImFjdGlvbiIsbyxhcmd1bWVudHMpfSxhcHBseUZpbHRlcnM6ZnVuY3Rpb24obyl7cmV0dXJuIGdmb3JtLmRvSG9vaygiZmlsdGVyIixvLGFyZ3VtZW50cyl9LHJlbW92ZUFjdGlvbjpmdW5jdGlvbihvLHIpe2dmb3JtLnJlbW92ZUhvb2soImFjdGlvbiIsbyxyKX0scmVtb3ZlRmlsdGVyOmZ1bmN0aW9uKG8scixlKXtnZm9ybS5yZW1vdmVIb29rKCJmaWx0ZXIiLG8scixlKX0sYWRkSG9vazpmdW5jdGlvbihvLHIsZSx0LG4pe251bGw9PWdmb3JtLmhvb2tzW29dW3JdJiYoZ2Zvcm0uaG9va3Nbb11bcl09W10pO3ZhciBkPWdmb3JtLmhvb2tzW29dW3JdO251bGw9PW4mJihuPXIrIl8iK2QubGVuZ3RoKSxnZm9ybS5ob29rc1tvXVtyXS5wdXNoKHt0YWc6bixjYWxsYWJsZTplLHByaW9yaXR5OnQ9bnVsbD09dD8xMDp0fSl9LGRvSG9vazpmdW5jdGlvbihyLG8sZSl7dmFyIHQ7aWYoZT1BcnJheS5wcm90b3R5cGUuc2xpY2UuY2FsbChlLDEpLG51bGwhPWdmb3JtLmhvb2tzW3JdW29dJiYoKG89Z2Zvcm0uaG9va3Nbcl1bb10pLnNvcnQoZnVuY3Rpb24obyxyKXtyZXR1cm4gby5wcmlvcml0eS1yLnByaW9yaXR5fSksby5mb3JFYWNoKGZ1bmN0aW9uKG8peyJmdW5jdGlvbiIhPXR5cGVvZih0PW8uY2FsbGFibGUpJiYodD13aW5kb3dbdF0pLCJhY3Rpb24iPT1yP3QuYXBwbHkobnVsbCxlKTplWzBdPXQuYXBwbHkobnVsbCxlKX0pKSwiZmlsdGVyIj09cilyZXR1cm4gZVswXX0scmVtb3ZlSG9vazpmdW5jdGlvbihvLHIsdCxuKXt2YXIgZTtudWxsIT1nZm9ybS5ob29rc1tvXVtyXSYmKGU9KGU9Z2Zvcm0uaG9va3Nbb11bcl0pLmZpbHRlcihmdW5jdGlvbihvLHIsZSl7cmV0dXJuISEobnVsbCE9biYmbiE9by50YWd8fG51bGwhPXQmJnQhPW8ucHJpb3JpdHkpfSksZ2Zvcm0uaG9va3Nbb11bcl09ZSl9fSk7IAovKiBdXT4gKi8K"></script>
+
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://monami.com.ar/xmlrpc.php" />
+
+	<script defer src="data:text/javascript;base64,KGZ1bmN0aW9uKGh0bWwpe2h0bWwuY2xhc3NOYW1lID0gaHRtbC5jbGFzc05hbWUucmVwbGFjZSgvXGJuby1qc1xiLywnanMnKX0pKGRvY3VtZW50LmRvY3VtZW50RWxlbWVudCk7"></script>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- This site is optimized with the Yoast SEO plugin v24.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Home - Mon Ami</title><link rel="preload" href="https://farmaciazentner.com.ar/wp-content/themes/flatsome/assets/css/flatsome.css" as="style" onload="this.rel='stylesheet';this.removeAttribute('onload');"><link rel="preload" href="https://farmaciazentner.com.ar/wp-content/themes/flatsome/assets/css/flatsome-shop.css" as="style" onload="this.rel='stylesheet';this.removeAttribute('onload');"><link rel="preload" href="https://farmaciazentner.com.ar/wp-content/plugins/woocommerce/assets/css/select2.css?ver=6.9.2" as="style" onload="this.rel='stylesheet';this.removeAttribute('onload');">
+	<meta name="description" content="¡Bien hecho! Porque tiene carne fresca, mucho amor y lo hacemos en Argentina para todo el mundo." />
+	<link rel="canonical" href="https://monami.com.ar/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Mon Ami | Alimento Saludable y ¡Bien Hecho!" />
+	<meta property="og:description" content="Alimento Saludable para Perros y Gatos, Snacks y Linea de Cuidado Dental." />
+	<meta property="og:url" content="https://monami.com.ar/" />
+	<meta property="og:site_name" content="Mon Ami" />
+	<meta property="article:modified_time" content="2025-02-21T14:35:08+00:00" />
+	<meta property="og:image" content="https://monami.com.ar/wp-content/uploads/2024/03/Fee_03-10_01.jpg" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://monami.com.ar/","url":"https://monami.com.ar/","name":"Home - Mon Ami","isPartOf":{"@id":"https://monami.com.ar/#website"},"about":{"@id":"https://monami.com.ar/#organization"},"datePublished":"2022-07-27T15:39:11+00:00","dateModified":"2025-02-21T14:35:08+00:00","description":"¡Bien hecho! Porque tiene carne fresca, mucho amor y lo hacemos en Argentina para todo el mundo.","breadcrumb":{"@id":"https://monami.com.ar/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://monami.com.ar/"]}]},{"@type":"BreadcrumbList","@id":"https://monami.com.ar/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://monami.com.ar/#website","url":"https://monami.com.ar/","name":"Mon Ami","description":"","publisher":{"@id":"https://monami.com.ar/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://monami.com.ar/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es"},{"@type":"Organization","@id":"https://monami.com.ar/#organization","name":"Mon Ami","url":"https://monami.com.ar/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://monami.com.ar/#/schema/logo/image/","url":"https://monami.com.ar/wp-content/uploads/2023/07/monami-logo-rojo.png","contentUrl":"https://monami.com.ar/wp-content/uploads/2023/07/monami-logo-rojo.png","width":200,"height":61,"caption":"Mon Ami"},"image":{"@id":"https://monami.com.ar/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<script type="application/javascript" id="pys-version-script" defer src="data:text/javascript;base64,Y29uc29sZS5sb2coJ1BpeGVsWW91clNpdGUgRnJlZSB2ZXJzaW9uIDEwLjEuMi4xJyk7"></script>
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='prefetch' href='https://monami.com.ar/wp-content/themes/flatsome/assets/js/flatsome.js?ver=8e60d746741250b4dd4e' />
+<link rel='prefetch' href='https://monami.com.ar/wp-content/themes/flatsome/assets/js/chunk.slider.js?ver=3.19.5' />
+<link rel='prefetch' href='https://monami.com.ar/wp-content/themes/flatsome/assets/js/chunk.popups.js?ver=3.19.5' />
+<link rel='prefetch' href='https://monami.com.ar/wp-content/themes/flatsome/assets/js/chunk.tooltips.js?ver=3.19.5' />
+<link rel='prefetch' href='https://monami.com.ar/wp-content/themes/flatsome/assets/js/woocommerce.js?ver=dd6035ce106022a74757' />
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<link rel='stylesheet' id='shipnow-shipping-style-css' href='https://monami.com.ar/wp-content/plugins/shipnow-shipping/css/widget.min.css?ver=6.8' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-styles-css' href='https://monami.com.ar/wp-content/plugins/tript-custom-maintenance/src/css/custom-styles.css?ver=6.8' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='brands-styles-css' href='https://monami.com.ar/wp-content/plugins/woocommerce/assets/css/brands.css?ver=9.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-pb-checkout-blocks-css' href='https://monami.com.ar/wp-content/plugins/woocommerce-product-bundles/assets/css/frontend/checkout-blocks.css?ver=8.1.2' type='text/css' media='all' />
+<style id='wc-pb-checkout-blocks-inline-css' type='text/css'>
+table.wc-block-cart-items .wc-block-cart-items__row.is-bundle__meta_hidden .wc-block-components-product-details__incluye, .wc-block-components-order-summary-item.is-bundle__meta_hidden .wc-block-components-product-details__incluye { display:none; } table.wc-block-cart-items .wc-block-cart-items__row.is-bundle .wc-block-components-product-details__incluye .wc-block-components-product-details__name, .wc-block-components-order-summary-item.is-bundle .wc-block-components-product-details__incluye .wc-block-components-product-details__name { display:block; margin-bottom: 0.5em } table.wc-block-cart-items .wc-block-cart-items__row.is-bundle .wc-block-components-product-details__incluye:not(:first-of-type) .wc-block-components-product-details__name, .wc-block-components-order-summary-item.is-bundle .wc-block-components-product-details__incluye:not(:first-of-type) .wc-block-components-product-details__name { display:none } table.wc-block-cart-items .wc-block-cart-items__row.is-bundle .wc-block-components-product-details__incluye + li:not( .wc-block-components-product-details__incluye ), .wc-block-components-order-summary-item.is-bundle .wc-block-components-product-details__incluye + li:not( .wc-block-components-product-details__incluye ) { margin-top:0.5em }
+</style>
+<link rel='stylesheet' id='gform_basic-css' href='https://monami.com.ar/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css?ver=2.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gform_theme_components-css' href='https://monami.com.ar/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css?ver=2.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gform_theme-css' href='https://monami.com.ar/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css?ver=2.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-bundle-style-css' href='https://monami.com.ar/wp-content/plugins/woocommerce-product-bundles/assets/css/frontend/woocommerce.css?ver=8.1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='flatsome-main-css' href='https://monami.com.ar/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.19.5' type='text/css' media='all' />
+<style id='flatsome-main-inline-css' type='text/css'>
+@font-face {
+				font-family: "fl-icons";
+				font-display: block;
+				src: url(https://monami.com.ar/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot?v=3.19.5);
+				src:
+					url(https://monami.com.ar/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot#iefix?v=3.19.5) format("embedded-opentype"),
+					url(https://monami.com.ar/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff2?v=3.19.5) format("woff2"),
+					url(https://monami.com.ar/wp-content/themes/flatsome/assets/css/icons/fl-icons.ttf?v=3.19.5) format("truetype"),
+					url(https://monami.com.ar/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff?v=3.19.5) format("woff"),
+					url(https://monami.com.ar/wp-content/themes/flatsome/assets/css/icons/fl-icons.svg?v=3.19.5#fl-icons) format("svg");
+			}
+</style>
+<link rel='stylesheet' id='flatsome-shop-css' href='https://monami.com.ar/wp-content/themes/flatsome/assets/css/flatsome-shop.css?ver=3.19.5' type='text/css' media='all' />
+<link rel='stylesheet' id='flatsome-style-css' href='https://monami.com.ar/wp-content/themes/Monami%20Child/style.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='tript-woocommerce-additional-prices-css' href='https://monami.com.ar/wp-content/plugins/triptongo-core/custom/classes/../../assets/css/woocommerce-additional-prices.css?ver=1.0.0' type='text/css' media='all' />
+<script type="text/javascript" id="gtmkit-js-before" data-cfasync="false" data-nowprocket data-cookieconsent="ignore" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwoJCXdpbmRvdy5ndG1raXRfc2V0dGluZ3MgPSB7ImRhdGFsYXllcl9uYW1lIjoiZGF0YUxheWVyIiwiY29uc29sZV9sb2ciOmZhbHNlLCJ3YyI6eyJ1c2Vfc2t1Ijp0cnVlLCJwaWRfcHJlZml4IjoiIiwiYWRkX3NoaXBwaW5nX2luZm8iOnsiY29uZmlnIjoxfSwiYWRkX3BheW1lbnRfaW5mbyI6eyJjb25maWciOjF9LCJ2aWV3X2l0ZW0iOnsiY29uZmlnIjowfSwidmlld19pdGVtX2xpc3QiOnsiY29uZmlnIjowfSwid2lzaGxpc3QiOmZhbHNlLCJjc3Nfc2VsZWN0b3JzIjp7InByb2R1Y3RfbGlzdF9zZWxlY3RfaXRlbSI6Ii5wcm9kdWN0cyAucHJvZHVjdDpub3QoLnByb2R1Y3QtY2F0ZWdvcnkpIGE6bm90KC5hZGRfdG9fY2FydF9idXR0b24uYWpheF9hZGRfdG9fY2FydCwuYWRkX3RvX3dpc2hsaXN0KSwud2MtYmxvY2stZ3JpZF9fcHJvZHVjdHMgbGk6bm90KC5wcm9kdWN0LWNhdGVnb3J5KSBhOm5vdCguYWRkX3RvX2NhcnRfYnV0dG9uLmFqYXhfYWRkX3RvX2NhcnQsLmFkZF90b193aXNobGlzdCksLndvb2NvbW1lcmNlLWdyb3VwZWQtcHJvZHVjdC1saXN0LWl0ZW1fX2xhYmVsIGE6bm90KC5hZGRfdG9fd2lzaGxpc3QpIiwicHJvZHVjdF9saXN0X2VsZW1lbnQiOiIucHJvZHVjdCwud2MtYmxvY2stZ3JpZF9fcHJvZHVjdCIsInByb2R1Y3RfbGlzdF9leGNsdWRlIjoiIiwicHJvZHVjdF9saXN0X2FkZF90b19jYXJ0IjoiLmFkZF90b19jYXJ0X2J1dHRvbi5hamF4X2FkZF90b19jYXJ0Om5vdCguc2luZ2xlX2FkZF90b19jYXJ0X2J1dHRvbikifSwidGV4dCI6eyJ3cC1ibG9jay1oYW5kcGlja2VkLXByb2R1Y3RzIjoiUHJvZHVjdG9zIHNlbGVjY2lvbmFkb3MiLCJ3cC1ibG9jay1wcm9kdWN0LWJlc3Qtc2VsbGVycyI6Ik1cdTAwZTFzIHZlbmRpZG9zIiwid3AtYmxvY2stcHJvZHVjdC1jYXRlZ29yeSI6IkNhdGVnb3JcdTAwZWRhcyBkZSBwcm9kdWN0b3MiLCJ3cC1ibG9jay1wcm9kdWN0LW5ldyI6Ik51ZXZvcyBwcm9kdWN0b3MiLCJ3cC1ibG9jay1wcm9kdWN0LW9uLXNhbGUiOiJQcm9kdWN0b3MgZW4gb2ZlcnRhIiwid3AtYmxvY2stcHJvZHVjdHMtYnktYXR0cmlidXRlIjoiUHJvZHVjdG9zIHBvciBhdHJpYnV0byIsIndwLWJsb2NrLXByb2R1Y3QtdGFnIjoiRXRpcXVldGFzIGRlIHByb2R1Y3RvcyIsIndwLWJsb2NrLXByb2R1Y3QtdG9wLXJhdGVkIjoiUHJvZHVjdG9zIG1lam9yIHZhbG9yYWRvcyIsInNoaXBwaW5nLXRpZXItbm90LWZvdW5kIjoiTm8gc2UgZW5jb250clx1MDBmMyBlbCBtXHUwMGU5dG9kbyBkZSBlbnZcdTAwZWRvIiwicGF5bWVudC1tZXRob2Qtbm90LWZvdW5kIjoiTVx1MDBlOXRvZG8gZGUgcGFnbyBubyBlbmNvbnRyYWRvIn19fTsKCQl3aW5kb3cuZ3Rta2l0X2RhdGEgPSB7IndjIjp7ImN1cnJlbmN5IjoiQVJTIiwiaXNfY2FydCI6ZmFsc2UsImlzX2NoZWNrb3V0IjpmYWxzZSwiYmxvY2tzIjp7fX19OwoJCXdpbmRvdy5kYXRhTGF5ZXIgPSB3aW5kb3cuZGF0YUxheWVyIHx8IFtdOwoJCQkJCi8qIF1dPiAqLwo="></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" id="shipnow-shipping-js-js-extra" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgc2hpcG5vdyA9IHsiYWpheHVybCI6Imh0dHBzOlwvXC9tb25hbWkuY29tLmFyXC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJfc2VsZWN0UG9zdE9mZmljZSI6IlNlbGVjdCBwb3N0IG9mZmljZSIsIl9jaGFuZ2VaaXBDb2RlIjoiQ2hhbmdlIFpJUCBDb2RlIiwiX3VuYWJsZVRvR2V0UG9zdE9mZmljZXMiOiJXZSB3ZXJlIHVuYWJsZSB0byBmZXRjaCB0aGUgcG9zdCBvZmZpY2UgbGlzdC4gUGxlYXNlIHRyeSBhZ2Fpbi4iLCJfcG9wdXBIdG1sIjoiPGRpdiBjbGFzcz1cInNoaXBub3ctcG9wdXBcIj5cblx0PGRpdiBjbGFzcz1cInNoaXBub3ctcG9wdXAtc2hhZG93XCI+PFwvZGl2PlxuXHQ8ZGl2PlxuXHRcdDxzcGFuIGNsYXNzPSdzaGlwbm93LWNsb3NlJz48XC9zcGFuPlxuXHRcdDxkaXY+PFwvZGl2PlxuXHQ8XC9kaXY+XG48XC9kaXY+IiwiX2NoYW5nZVppcEh0bWwiOiI8Zm9ybSBjbGFzcz1cInNoaXBub3ctZm9ybSBzaGlwbm93LWNoYW5nZS16aXAtZm9ybVwiPlxuXHQ8bGFiZWw+TmV3IFpJUCBjb2RlOjxcL2xhYmVsPlxuXHQ8aW5wdXQgdHlwZT1cIm51bWJlclwiIGNsYXNzPVwiaW5wdXQtdGV4dCBzaGlwbm93LXppcC1maWVsZCB0ZXh0XCIgc3RlcD1cIjFcIiBtaW49XCIxXCIgbmFtZT1cInppcFwiIHZhbHVlPVwie3ppcH1cIiBzaXplPVwiNFwiPlxuXHQ8YnV0dG9uIHR5cGU9XCJidXR0b25cIiBjbGFzcz1cImJ1dHRvbiBzaGlwbm93LW9rLWJ1dHRvblwiPk9rPFwvYnV0dG9uPlxuPFwvZm9ybT4iLCJfaW52YWxpZFppcEVycm9yIjoiVGhlIFpJUCBjb2RlIGlzIG5vdCB2YWxpZCEifTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/shipnow-shipping/js/widget.min.js?ver=6.8" id="shipnow-shipping-js-js" defer></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.9.7.1" id="jquery-blockui-js" data-wp-strategy="defer" defer></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgd2NfYWRkX3RvX2NhcnRfcGFyYW1zID0geyJhamF4X3VybCI6Ilwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwid2NfYWpheF91cmwiOiJcLz93Yy1hamF4PSUlZW5kcG9pbnQlJSIsImkxOG5fdmlld19jYXJ0IjoiVmVyIGNhcnJpdG8iLCJjYXJ0X3VybCI6Imh0dHBzOlwvXC9tb25hbWkuY29tLmFyXC9jYXJyaXRvXC8iLCJpc19jYXJ0IjoiIiwiY2FydF9yZWRpcmVjdF9hZnRlcl9hZGQiOiJubyJ9OwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.7.1" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.9.7.1" id="js-cookie-js" data-wp-strategy="defer" defer></script>
+<script type="text/javascript" id="gtmkit-container-js-after" data-cfasync="false" data-nowprocket data-cookieconsent="ignore" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwovKiBHb29nbGUgVGFnIE1hbmFnZXIgKi8KKGZ1bmN0aW9uKHcsZCxzLGwsaSl7d1tsXT13W2xdfHxbXTt3W2xdLnB1c2goeydndG0uc3RhcnQnOgpuZXcgRGF0ZSgpLmdldFRpbWUoKSxldmVudDonZ3RtLmpzJ30pO3ZhciBmPWQuZ2V0RWxlbWVudHNCeVRhZ05hbWUocylbMF0sCmo9ZC5jcmVhdGVFbGVtZW50KHMpLGRsPWwhPSdkYXRhTGF5ZXInPycmbD0nK2w6Jyc7ai5hc3luYz10cnVlO2ouc3JjPQonaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RtLmpzP2lkPScraStkbDtmLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGosZik7Cn0pKHdpbmRvdyxkb2N1bWVudCwnc2NyaXB0JywnZGF0YUxheWVyJywnR1RNLVBHUVpGMzcnKTsKLyogRW5kIEdvb2dsZSBUYWcgTWFuYWdlciAqLwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/gtm-kit/assets/integration/woocommerce.js?ver=2.3.1" id="gtmkit-woocommerce-js" defer data-wp-strategy="defer"></script>
+<script type="text/javascript" id="gtmkit-datalayer-js-before" data-cfasync="false" data-nowprocket data-cookieconsent="ignore" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwpjb25zdCBndG1raXRfZGF0YUxheWVyX2NvbnRlbnQgPSB7InBhZ2VUeXBlIjoiZnJvbnRwYWdlIn07CmRhdGFMYXllci5wdXNoKCBndG1raXRfZGF0YUxheWVyX2NvbnRlbnQgKTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.8" id="jquery-bind-first-js" defer></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3" id="js-cookie-pys-js" defer></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/pixelyoursite/dist/scripts/tld.min.js?ver=2.3.1" id="js-tld-js" defer></script>
+<script type="text/javascript" id="pys-js-extra" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgcHlzT3B0aW9ucyA9IHsic3RhdGljRXZlbnRzIjp7ImZhY2Vib29rIjp7ImluaXRfZXZlbnQiOlt7ImRlbGF5IjowLCJ0eXBlIjoic3RhdGljIiwiYWpheEZpcmUiOmZhbHNlLCJuYW1lIjoiUGFnZVZpZXciLCJwaXhlbElkcyI6WyI1NTM5ODU0NzgyOTI3MjEiXSwiZXZlbnRJRCI6IjVjNDRjMDBhLWY1YTAtNDVkOS1hNjkxLTMyNDgwZmVhZmNiMiIsInBhcmFtcyI6eyJwYWdlX3RpdGxlIjoiSG9tZSIsInBvc3RfdHlwZSI6InBhZ2UiLCJwb3N0X2lkIjozMSwicGx1Z2luIjoiUGl4ZWxZb3VyU2l0ZSIsInVzZXJfcm9sZSI6Imd1ZXN0IiwiZXZlbnRfdXJsIjoibW9uYW1pLmNvbS5hclwvIn0sImVfaWQiOiJpbml0X2V2ZW50IiwiaWRzIjpbXSwiaGFzVGltZVdpbmRvdyI6ZmFsc2UsInRpbWVXaW5kb3ciOjAsIndvb19vcmRlciI6IiIsImVkZF9vcmRlciI6IiJ9XX19LCJkeW5hbWljRXZlbnRzIjpbXSwidHJpZ2dlckV2ZW50cyI6W10sInRyaWdnZXJFdmVudFR5cGVzIjpbXSwiZmFjZWJvb2siOnsicGl4ZWxJZHMiOlsiNTUzOTg1NDc4MjkyNzIxIl0sImFkdmFuY2VkTWF0Y2hpbmciOnsiZm4iOiJmbG9yZW5jaWEiLCJsbiI6InZpY2VucyIsImVtIjoiZmxvcmVuY2lhLnZpY2Vuc0Bob3RtYWlsLmNvbS5hciIsInBoIjoiMTE1NTY0NjY1NyIsImV4dGVybmFsX2lkIjoiZmJjYmNmZmZhY2ZmYWViZGRiY2JmYWJkY2ZiZGVhIn0sImFkdmFuY2VkTWF0Y2hpbmdFbmFibGVkIjp0cnVlLCJyZW1vdmVNZXRhZGF0YSI6ZmFsc2UsImNvbnRlbnRQYXJhbXMiOnsicG9zdF90eXBlIjoicGFnZSIsInBvc3RfaWQiOjMxLCJjb250ZW50X25hbWUiOiJIb21lIn0sImNvbW1lbnRFdmVudEVuYWJsZWQiOnRydWUsIndvb1ZhcmlhYmxlQXNTaW1wbGUiOmZhbHNlLCJkb3dubG9hZEVuYWJsZWQiOnRydWUsImZvcm1FdmVudEVuYWJsZWQiOnRydWUsInNlcnZlckFwaUVuYWJsZWQiOnRydWUsIndvb0NSU2VuZEZyb21TZXJ2ZXIiOmZhbHNlLCJzZW5kX2V4dGVybmFsX2lkIjpudWxsLCJlbmFibGVkX21lZGljYWwiOmZhbHNlLCJkb19ub3RfdHJhY2tfbWVkaWNhbF9wYXJhbSI6WyJldmVudF91cmwiLCJwb3N0X3RpdGxlIiwicGFnZV90aXRsZSIsImxhbmRpbmdfcGFnZSIsImNvbnRlbnRfbmFtZSIsImNhdGVnb3JpZXMiLCJjYXRlZ29yeV9uYW1lIiwidGFncyJdLCJtZXRhX2xkdSI6ZmFsc2V9LCJkZWJ1ZyI6IiIsInNpdGVVcmwiOiJodHRwczpcL1wvbW9uYW1pLmNvbS5hciIsImFqYXhVcmwiOiJodHRwczpcL1wvbW9uYW1pLmNvbS5hclwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwiYWpheF9ldmVudCI6ImE2YWYzNjc2YmQiLCJlbmFibGVfcmVtb3ZlX2Rvd25sb2FkX3VybF9wYXJhbSI6IjEiLCJjb29raWVfZHVyYXRpb24iOiI3IiwibGFzdF92aXNpdF9kdXJhdGlvbiI6IjYwIiwiZW5hYmxlX3N1Y2Nlc3Nfc2VuZF9mb3JtIjoiIiwiYWpheEZvclNlcnZlckV2ZW50IjoiMSIsImFqYXhGb3JTZXJ2ZXJTdGF0aWNFdmVudCI6IjEiLCJzZW5kX2V4dGVybmFsX2lkIjoiMSIsImV4dGVybmFsX2lkX2V4cGlyZSI6IjE4MCIsInRyYWNrX2Nvb2tpZV9mb3Jfc3ViZG9tYWlucyI6IjEiLCJnb29nbGVfY29uc2VudF9tb2RlIjoiMSIsImdkcHIiOnsiYWpheF9lbmFibGVkIjpmYWxzZSwiYWxsX2Rpc2FibGVkX2J5X2FwaSI6ZmFsc2UsImZhY2Vib29rX2Rpc2FibGVkX2J5X2FwaSI6ZmFsc2UsImFuYWx5dGljc19kaXNhYmxlZF9ieV9hcGkiOmZhbHNlLCJnb29nbGVfYWRzX2Rpc2FibGVkX2J5X2FwaSI6ZmFsc2UsInBpbnRlcmVzdF9kaXNhYmxlZF9ieV9hcGkiOmZhbHNlLCJiaW5nX2Rpc2FibGVkX2J5X2FwaSI6ZmFsc2UsImV4dGVybmFsSURfZGlzYWJsZWRfYnlfYXBpIjpmYWxzZSwiZmFjZWJvb2tfcHJpb3JfY29uc2VudF9lbmFibGVkIjp0cnVlLCJhbmFseXRpY3NfcHJpb3JfY29uc2VudF9lbmFibGVkIjp0cnVlLCJnb29nbGVfYWRzX3ByaW9yX2NvbnNlbnRfZW5hYmxlZCI6bnVsbCwicGludGVyZXN0X3ByaW9yX2NvbnNlbnRfZW5hYmxlZCI6dHJ1ZSwiYmluZ19wcmlvcl9jb25zZW50X2VuYWJsZWQiOnRydWUsImNvb2tpZWJvdF9pbnRlZ3JhdGlvbl9lbmFibGVkIjpmYWxzZSwiY29va2llYm90X2ZhY2Vib29rX2NvbnNlbnRfY2F0ZWdvcnkiOiJtYXJrZXRpbmciLCJjb29raWVib3RfYW5hbHl0aWNzX2NvbnNlbnRfY2F0ZWdvcnkiOiJzdGF0aXN0aWNzIiwiY29va2llYm90X3Rpa3Rva19jb25zZW50X2NhdGVnb3J5IjoibWFya2V0aW5nIiwiY29va2llYm90X2dvb2dsZV9hZHNfY29uc2VudF9jYXRlZ29yeSI6bnVsbCwiY29va2llYm90X3BpbnRlcmVzdF9jb25zZW50X2NhdGVnb3J5IjoibWFya2V0aW5nIiwiY29va2llYm90X2JpbmdfY29uc2VudF9jYXRlZ29yeSI6Im1hcmtldGluZyIsImNvbnNlbnRfbWFnaWNfaW50ZWdyYXRpb25fZW5hYmxlZCI6ZmFsc2UsInJlYWxfY29va2llX2Jhbm5lcl9pbnRlZ3JhdGlvbl9lbmFibGVkIjpmYWxzZSwiY29va2llX25vdGljZV9pbnRlZ3JhdGlvbl9lbmFibGVkIjpmYWxzZSwiY29va2llX2xhd19pbmZvX2ludGVncmF0aW9uX2VuYWJsZWQiOmZhbHNlLCJhbmFseXRpY3Nfc3RvcmFnZSI6eyJlbmFibGVkIjp0cnVlLCJ2YWx1ZSI6ImdyYW50ZWQiLCJmaWx0ZXIiOmZhbHNlfSwiYWRfc3RvcmFnZSI6eyJlbmFibGVkIjp0cnVlLCJ2YWx1ZSI6ImdyYW50ZWQiLCJmaWx0ZXIiOmZhbHNlfSwiYWRfdXNlcl9kYXRhIjp7ImVuYWJsZWQiOnRydWUsInZhbHVlIjoiZ3JhbnRlZCIsImZpbHRlciI6ZmFsc2V9LCJhZF9wZXJzb25hbGl6YXRpb24iOnsiZW5hYmxlZCI6dHJ1ZSwidmFsdWUiOiJncmFudGVkIiwiZmlsdGVyIjpmYWxzZX19LCJjb29raWUiOnsiZGlzYWJsZWRfYWxsX2Nvb2tpZSI6ZmFsc2UsImRpc2FibGVkX3N0YXJ0X3Nlc3Npb25fY29va2llIjpmYWxzZSwiZGlzYWJsZWRfYWR2YW5jZWRfZm9ybV9kYXRhX2Nvb2tpZSI6ZmFsc2UsImRpc2FibGVkX2xhbmRpbmdfcGFnZV9jb29raWUiOmZhbHNlLCJkaXNhYmxlZF9maXJzdF92aXNpdF9jb29raWUiOmZhbHNlLCJkaXNhYmxlZF90cmFmZmljc291cmNlX2Nvb2tpZSI6ZmFsc2UsImRpc2FibGVkX3V0bVRlcm1zX2Nvb2tpZSI6ZmFsc2UsImRpc2FibGVkX3V0bUlkX2Nvb2tpZSI6ZmFsc2V9LCJ0cmFja2luZ19hbmFseXRpY3MiOnsiVHJhZmZpY1NvdXJjZSI6Ind3dy5nb29nbGUuY29tIiwiVHJhZmZpY0xhbmRpbmciOiJodHRwczpcL1wvbW9uYW1pLmNvbS5hclwvIiwiVHJhZmZpY1V0bXMiOltdLCJUcmFmZmljVXRtc0lkIjpbXX0sIkdBVGFncyI6eyJnYV9kYXRhbGF5ZXJfdHlwZSI6ImRlZmF1bHQiLCJnYV9kYXRhbGF5ZXJfbmFtZSI6ImRhdGFMYXllclBZUyJ9LCJ3b28iOnsiZW5hYmxlZCI6dHJ1ZSwiZW5hYmxlZF9zYXZlX2RhdGFfdG9fb3JkZXJzIjp0cnVlLCJhZGRUb0NhcnRPbkJ1dHRvbkVuYWJsZWQiOnRydWUsImFkZFRvQ2FydE9uQnV0dG9uVmFsdWVFbmFibGVkIjp0cnVlLCJhZGRUb0NhcnRPbkJ1dHRvblZhbHVlT3B0aW9uIjoicHJpY2UiLCJzaW5nbGVQcm9kdWN0SWQiOm51bGwsInJlbW92ZUZyb21DYXJ0U2VsZWN0b3IiOiJmb3JtLndvb2NvbW1lcmNlLWNhcnQtZm9ybSAucmVtb3ZlIiwiYWRkVG9DYXJ0Q2F0Y2hNZXRob2QiOiJhZGRfY2FydF9ob29rIiwiaXNfb3JkZXJfcmVjZWl2ZWRfcGFnZSI6ZmFsc2UsImNvbnRhaW5PcmRlcklkIjpmYWxzZX0sImVkZCI6eyJlbmFibGVkIjpmYWxzZX0sImNhY2hlX2J5cGFzcyI6IjE3NDUxMDk3MjIifTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=10.1.2.1" id="pys-js" defer></script>
+<script type="text/javascript" defer='defer' src="https://monami.com.ar/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.9.4" id="gform_json-js"></script>
+<script type="text/javascript" id="gform_gravityforms-js-extra" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgZ2ZfZ2xvYmFsID0geyJnZl9jdXJyZW5jeV9jb25maWciOnsibmFtZSI6IkRcdTAwZjNsYXIgQW1lcmljYW5vIiwic3ltYm9sX2xlZnQiOiIkIiwic3ltYm9sX3JpZ2h0IjoiIiwic3ltYm9sX3BhZGRpbmciOiIiLCJ0aG91c2FuZF9zZXBhcmF0b3IiOiIsIiwiZGVjaW1hbF9zZXBhcmF0b3IiOiIuIiwiZGVjaW1hbHMiOjIsImNvZGUiOiJVU0QifSwiYmFzZV91cmwiOiJodHRwczpcL1wvbW9uYW1pLmNvbS5hclwvd3AtY29udGVudFwvcGx1Z2luc1wvZ3Jhdml0eWZvcm1zIiwibnVtYmVyX2Zvcm1hdHMiOltdLCJzcGlubmVyVXJsIjoiaHR0cHM6XC9cL21vbmFtaS5jb20uYXJcL3dwLWNvbnRlbnRcL3BsdWdpbnNcL2dyYXZpdHlmb3Jtc1wvaW1hZ2VzXC9zcGlubmVyLnN2ZyIsInZlcnNpb25faGFzaCI6IjE3OTFlYWEzYTY5ODMzYjAzODMxMDZkZTFiY2FkMzIxIiwic3RyaW5ncyI6eyJuZXdSb3dBZGRlZCI6Ik51ZXZhIGZpbGEgYVx1MDBmMWFkaWRhLiIsInJvd1JlbW92ZWQiOiJGaWxhIGVsaW1pbmFkYSIsImZvcm1TYXZlZCI6IlNlIGhhIGd1YXJkYWRvIGVsIGZvcm11bGFyaW8uIEVsIGNvbnRlbmlkbyBpbmNsdXllIGVsIGVubGFjZSBwYXJhIHZvbHZlciB5IGNvbXBsZXRhciBlbCBmb3JtdWxhcmlvLiJ9fTsKdmFyIGdmb3JtX2kxOG4gPSB7ImRhdGVwaWNrZXIiOnsiZGF5cyI6eyJtb25kYXkiOiJMdSIsInR1ZXNkYXkiOiJNYSIsIndlZG5lc2RheSI6Ik1pIiwidGh1cnNkYXkiOiJKdSIsImZyaWRheSI6IlZpIiwic2F0dXJkYXkiOiJTYSIsInN1bmRheSI6IkRvIn0sIm1vbnRocyI6eyJqYW51YXJ5IjoiRW5lcm8iLCJmZWJydWFyeSI6IkZlYnJlcm8iLCJtYXJjaCI6Ik1hcnpvIiwiYXByaWwiOiJBYnJpbCIsIm1heSI6Ik1heW8iLCJqdW5lIjoiSnVuaW8iLCJqdWx5IjoiSnVsaW8iLCJhdWd1c3QiOiJBZ29zdG8iLCJzZXB0ZW1iZXIiOiJTZXB0aWVtYnJlIiwib2N0b2JlciI6Ik9jdHVicmUiLCJub3ZlbWJlciI6Ik5vdmllbWJyZSIsImRlY2VtYmVyIjoiRGljaWVtYnJlIn0sImZpcnN0RGF5IjoxLCJpY29uVGV4dCI6IkVsaWdlIHVuYSBmZWNoYSJ9fTsKdmFyIGdmX2xlZ2FjeV9tdWx0aSA9IHsiMyI6IiJ9Owp2YXIgZ2Zvcm1fZ3Jhdml0eWZvcm1zID0geyJzdHJpbmdzIjp7ImludmFsaWRfZmlsZV9leHRlbnNpb24iOiJFc3RlIHRpcG8gZGUgYXJjaGl2byBubyBlc3RcdTAwZTEgcGVybWl0aWRvLiBEZWJlIHNlciB1bm8gZGUgbG9zIHNpZ3VpZW50ZXM6IiwiZGVsZXRlX2ZpbGUiOiJCb3JyYXIgZXN0ZSBhcmNoaXZvIiwiaW5fcHJvZ3Jlc3MiOiJlbiBjdXJzbyIsImZpbGVfZXhjZWVkc19saW1pdCI6IkVsIGFyY2hpdm8gZXhjZWRlIGVsIGxcdTAwZWRtaXRlIGRlIHRhbWFcdTAwZjFvIiwiaWxsZWdhbF9leHRlbnNpb24iOiJFc3RlIHRpcG8gZGUgYXJjaGl2byBubyBlc3RcdTAwZTEgcGVybWl0aWRvLiIsIm1heF9yZWFjaGVkIjoiTlx1MDBiYSBtXHUwMGUxeGltbyBkZSBhcmNoaXZvcyBhbGNhbnphZG8iLCJ1bmtub3duX2Vycm9yIjoiSHVibyB1biBwcm9ibGVtYSBhbCBndWFyZGFyIGVsIGFyY2hpdm8gZW4gZWwgc2Vydmlkb3IiLCJjdXJyZW50bHlfdXBsb2FkaW5nIjoiUG9yIGZhdm9yIGVzcGVyYSBhIHF1ZSBzZSBjb21wbGV0ZSBsYSBzdWJpZGEiLCJjYW5jZWwiOiJDYW5jZWxhciIsImNhbmNlbF91cGxvYWQiOiJDYW5jZWxhciBlc3RhIHN1YmlkYSIsImNhbmNlbGxlZCI6IkNhbmNlbGFkYSJ9LCJ2YXJzIjp7ImltYWdlc191cmwiOiJodHRwczpcL1wvbW9uYW1pLmNvbS5hclwvd3AtY29udGVudFwvcGx1Z2luc1wvZ3Jhdml0eWZvcm1zXC9pbWFnZXMifX07Ci8qIF1dPiAqLwo="></script>
+<script type="text/javascript" id="gform_gravityforms-js-before" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwoKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" defer src="https://monami.com.ar/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.9.4" id="gform_gravityforms-js"></script>
+<script type="text/javascript" defer src="https://monami.com.ar/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=501a987060f4426fb517400c73c7fc1e" id="gform_gravityforms_utils-js"></script>
+<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+<!-- This website runs the Product Feed PRO for WooCommerce by AdTribes.io plugin - version 13.4.2 -->
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<script defer src="data:text/javascript;base64,ZnVuY3Rpb24gcGVyZm1hdHRlcnNfY2hlY2tfY2FydF9mcmFnbWVudHMoKXtpZihudWxsIT09ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInBlcmZtYXR0ZXJzLWNhcnQtZnJhZ21lbnRzIikpcmV0dXJuITE7aWYoZG9jdW1lbnQuY29va2llLm1hdGNoKCIoXnw7KSA/d29vY29tbWVyY2VfY2FydF9oYXNoPShbXjtdKikoO3wkKSIpKXt2YXIgZT1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCJzY3JpcHQiKTtlLmlkPSJwZXJmbWF0dGVycy1jYXJ0LWZyYWdtZW50cyIsZS5zcmM9Imh0dHBzOi8vbW9uYW1pLmNvbS5hci93cC1jb250ZW50L3BsdWdpbnMvd29vY29tbWVyY2UvYXNzZXRzL2pzL2Zyb250ZW5kL2NhcnQtZnJhZ21lbnRzLm1pbi5qcyIsZS5hc3luYz0hMCxkb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKGUpfX1wZXJmbWF0dGVyc19jaGVja19jYXJ0X2ZyYWdtZW50cygpLGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoImNsaWNrIixmdW5jdGlvbigpe3NldFRpbWVvdXQocGVyZm1hdHRlcnNfY2hlY2tfY2FydF9mcmFnbWVudHMsMWUzKX0pOw=="></script><style class='wp-fonts-local' type='text/css'>
+@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:fallback;src:url('https://monami.com.ar/wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Cardo;font-style:normal;font-weight:400;font-display:fallback;src:url('https://monami.com.ar/wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2') format('woff2');}
+</style>
+<link rel="icon" href="https://monami.com.ar/wp-content/uploads/2023/07/cropped-monami-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://monami.com.ar/wp-content/uploads/2023/07/cropped-monami-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://monami.com.ar/wp-content/uploads/2023/07/cropped-monami-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://monami.com.ar/wp-content/uploads/2023/07/cropped-monami-favicon-270x270.png" />
+<style id="custom-css" type="text/css">:root {--primary-color: #c91717;--fs-color-primary: #c91717;--fs-color-secondary: #2fb5d2;--fs-color-success: #5d9164;--fs-color-alert: #c91717;--fs-experimental-link-color: #c91717;--fs-experimental-link-color-hover: #2fb5d2;}.tooltipster-base {--tooltip-color: #fff;--tooltip-bg-color: #000;}.off-canvas-right .mfp-content, .off-canvas-left .mfp-content {--drawer-width: 300px;}.off-canvas .mfp-content.off-canvas-cart {--drawer-width: 360px;}.container-width, .full-width .ubermenu-nav, .container, .row{max-width: 1770px}.row.row-collapse{max-width: 1740px}.row.row-small{max-width: 1762.5px}.row.row-large{max-width: 1800px}.header-main{height: 100px}#logo img{max-height: 100px}#logo{width:149px;}.header-bottom{min-height: 10px}.header-top{min-height: 30px}.transparent .header-main{height: 265px}.transparent #logo img{max-height: 265px}.has-transparent + .page-title:first-of-type,.has-transparent + #main > .page-title,.has-transparent + #main > div > .page-title,.has-transparent + #main .page-header-wrapper:first-of-type .page-title{padding-top: 315px;}.header.show-on-scroll,.stuck .header-main{height:70px!important}.stuck #logo img{max-height: 70px!important}.header-bg-color {background-color: #e1dcce}.header-bottom {background-color: #f1f1f1}.header-main .nav > li > a{line-height: 32px }@media (max-width: 549px) {.header-main{height: 70px}#logo img{max-height: 70px}}.main-menu-overlay{background-color: #ebebeb}.nav-dropdown{border-radius:5px}.nav-dropdown{font-size:100%}.nav-dropdown-has-arrow li.has-dropdown:after{border-bottom-color: #ffffff;}.nav .nav-dropdown{background-color: #ffffff}body{color: #806f6e}h1,h2,h3,h4,h5,h6,.heading-font{color: #806f6e;}body{font-size: 100%;}@media screen and (max-width: 549px){body{font-size: 100%;}}body{font-family: Lora, sans-serif;}body {font-weight: 400;font-style: normal;}.nav > li > a {font-family: Lora, sans-serif;}.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-family: Lora, sans-serif;}.nav > li > a,.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-weight: 700;font-style: normal;}h1,h2,h3,h4,h5,h6,.heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a{font-family: Lora, sans-serif;}h1,h2,h3,h4,h5,h6,.heading-font,.banner h1,.banner h2 {font-weight: 700;font-style: normal;}.alt-font{font-family: "Dancing Script", sans-serif;}.alt-font {font-weight: 400!important;font-style: normal!important;}.nav > li > a, .links > li > a{text-transform: none;}.section-title span{text-transform: none;}h3.widget-title,span.widget-title{text-transform: none;}.header:not(.transparent) .header-nav-main.nav > li > a {color: #c91717;}.shop-page-title.featured-title .title-overlay{background-color: rgba(255,255,255,0.3);}.current .breadcrumb-step, [data-icon-label]:after, .button#place_order,.button.checkout,.checkout-button,.single_add_to_cart_button.button, .sticky-add-to-cart-select-options-button{background-color: #c91717!important }.has-equal-box-heights .box-image {padding-top: 100%;}.badge-inner.on-sale{background-color: #2fb5d2}.badge-inner.new-bubble{background-color: #2fb5d2}.price del, .product_list_widget del, del .woocommerce-Price-amount { color: #2fb5d2; }ins .woocommerce-Price-amount { color: #2fb5d2; }@media screen and (min-width: 550px){.products .box-vertical .box-image{min-width: 247px!important;width: 247px!important;}}.header-main .social-icons,.header-main .cart-icon strong,.header-main .menu-title,.header-main .header-button > .button.is-outline,.header-main .nav > li > a > i:not(.icon-angle-down){color: #c91717!important;}.header-main .header-button > .button.is-outline,.header-main .cart-icon strong:after,.header-main .cart-icon strong{border-color: #c91717!important;}.header-main .header-button > .button:not(.is-outline){background-color: #c91717!important;}.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover,.header-main .header-button > .button:hover i,.header-main .header-button > .button:hover span{color:#FFF!important;}.header-main .menu-title:hover,.header-main .social-icons a:hover,.header-main .header-button > .button.is-outline:hover,.header-main .nav > li > a:hover > i:not(.icon-angle-down){color: #c91717!important;}.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover{background-color: #c91717!important;}.header-main .current-dropdown .cart-icon strong:after,.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover{border-color: #c91717!important;}.absolute-footer, html{background-color: #ebebeb}button[name='update_cart'] { display: none; }.nav-vertical-fly-out > li + li {border-top-width: 1px; border-top-style: solid;}.label-new.menu-item > a:after{content:"Nuevo";}.label-hot.menu-item > a:after{content:"Caliente";}.label-sale.menu-item > a:after{content:"Oferta";}.label-popular.menu-item > a:after{content:"Populares";}</style><style id="kirki-inline-styles">/* cyrillic-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuMwf7I-NP.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuMw77I-NP.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* math */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuM3b7I-NP.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuM2T7I-NP.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuMwX7I-NP.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuMwT7I-NP.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuMwr7Iw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuMwf7I-NP.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuMw77I-NP.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* math */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuM3b7I-NP.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuM2T7I-NP.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuMwX7I-NP.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuMwT7I-NP.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/lora/0QIvMX1D_JOuMwr7Iw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* vietnamese */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/dancing-script/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Rep8ltA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/dancing-script/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3ROp8ltA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://monami.com.ar/wp-content/fonts/dancing-script/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style></head>
+
+<body class="home wp-singular page-template page-template-page-blank page-template-page-blank-php page page-id-31 wp-theme-flatsome wp-child-theme-MonamiChild theme-flatsome woocommerce-no-js full-width header-shadow lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGQZF37" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip-link screen-reader-text" href="#main">Saltar al contenido</a>
+
+<div id="wrapper">
+
+	
+	<header id="header" class="header has-sticky sticky-jump">
+		<div class="header-wrapper">
+			<div id="masthead" class="header-main nav-dark">
+      <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+
+          <!-- Logo -->
+          <div id="logo" class="flex-col logo">
+            
+<!-- Header logo -->
+<a href="https://monami.com.ar/" title="Mon Ami" rel="home">
+		<img width="200" height="61" src="https://monami.com.ar/wp-content/uploads/2023/07/monami-logo-rojo.png" class="header_logo header-logo" alt="Mon Ami"/><img  width="200" height="61" src="https://monami.com.ar/wp-content/uploads/2023/07/monami-logo-rojo.png" class="header-logo-dark" alt="Mon Ami"/></a>
+          </div>
+
+          <!-- Mobile Left Elements -->
+          <div class="flex-col show-for-medium flex-left">
+            <ul class="mobile-nav nav nav-left ">
+              <li class="nav-icon has-icon">
+  		<a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay" data-color="" class="is-small" aria-label="Menú" aria-controls="main-menu" aria-expanded="false">
+
+		  <i class="icon-menu" ></i>
+		  		</a>
+	</li>
+            </ul>
+          </div>
+
+          <!-- Left Elements -->
+          <div class="flex-col hide-for-medium flex-left
+            flex-grow">
+            <ul class="header-nav header-nav-main nav nav-left  nav-line-bottom nav-size-xlarge nav-spacing-xlarge" >
+              <li id="menu-item-638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-31 current_page_item menu-item-638 active menu-item-design-default"><a href="https://monami.com.ar/" aria-current="page" class="nav-top-link">Home</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51 menu-item-design-default"><a href="https://monami.com.ar/tienda/" class="nav-top-link">Tienda</a></li>
+<li id="menu-item-1409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409 menu-item-design-default"><a href="https://monami.com.ar/productos/" class="nav-top-link">Productos</a></li>
+<li id="menu-item-1943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1943 menu-item-design-default"><a href="https://monami.com.ar/sobre-nosotros/" class="nav-top-link">Sobre nosotros</a></li>
+<li id="menu-item-6200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6200 menu-item-design-default"><a href="https://monami.com.ar/monjournal/" class="nav-top-link">Mon Journal</a></li>
+<li id="menu-item-16848" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16848 menu-item-design-default"><a href="https://monami.com.ar/puntos-de-venta/" class="nav-top-link">Puntos de venta</a></li>
+<li class="header-search header-search-dropdown has-icon has-dropdown menu-item-has-children">
+		<a href="#" aria-label="Buscar" class="is-small"><i class="icon-search" ></i></a>
+		<ul class="nav-dropdown nav-dropdown-simple">
+	 	<li class="header-search-form search-form html relative has-icon">
+	<div class="header-search-form-wrapper">
+		<div class="searchform-wrapper ux-search-box relative form-flat is-normal"><form role="search" method="get" class="searchform" action="https://monami.com.ar/">
+	<div class="flex-row relative">
+						<div class="flex-col flex-grow">
+			<label class="screen-reader-text" for="woocommerce-product-search-field-0">Buscar por:</label>
+			<input type="search" id="woocommerce-product-search-field-0" class="search-field mb-0" placeholder="Buscar" value="" name="s" />
+			<input type="hidden" name="post_type" value="product" />
+					</div>
+		<div class="flex-col">
+			<button type="submit" value="Buscar" class="ux-search-submit submit-button secondary button  icon mb-0" aria-label="Enviar">
+				<i class="icon-search" ></i>			</button>
+		</div>
+	</div>
+	<div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li>
+	</ul>
+</li>
+            </ul>
+          </div>
+
+          <!-- Right Elements -->
+          <div class="flex-col hide-for-medium flex-right">
+            <ul class="header-nav header-nav-main nav nav-right  nav-line-bottom nav-size-xlarge nav-spacing-xlarge">
+              <li class="header-newsletter-item has-icon">
+
+<a href="#header-newsletter-signup" class="tooltip "
+  title="Sign up for Newsletter">
+
+  
+  </a>
+	<div id="header-newsletter-signup"
+	     class="lightbox-by-id lightbox-content mfp-hide lightbox-white "
+	     style="max-width:700px ;padding:0px">
+			<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1520526603">
+								<div class="img-inner dark" >
+			<img width="1020" height="463" src="https://monami.com.ar/wp-content/uploads/2025/03/PopUpWeb_Mesa-de-trabajo-1-1024x465.webp" class="attachment-large size-large" alt="" decoding="async" fetchpriority="high" srcset="https://monami.com.ar/wp-content/uploads/2025/03/PopUpWeb_Mesa-de-trabajo-1-1024x465.webp 1024w, https://monami.com.ar/wp-content/uploads/2025/03/PopUpWeb_Mesa-de-trabajo-1-300x136.webp 300w, https://monami.com.ar/wp-content/uploads/2025/03/PopUpWeb_Mesa-de-trabajo-1-768x349.webp 768w, https://monami.com.ar/wp-content/uploads/2025/03/PopUpWeb_Mesa-de-trabajo-1-247x112.webp 247w, https://monami.com.ar/wp-content/uploads/2025/03/PopUpWeb_Mesa-de-trabajo-1-400x182.webp 400w, https://monami.com.ar/wp-content/uploads/2025/03/PopUpWeb_Mesa-de-trabajo-1.webp 1100w" sizes="(max-width: 1020px) 100vw, 1020px" />						
+					</div>
+								
+<style>
+#image_1520526603 {
+  width: 100%;
+}
+</style>
+	</div>
+		</div>
+			<script defer src="data:text/javascript;base64,CgkJCS8vIEF1dG8gb3BlbiBsaWdodGJveGVzCgkJCWpRdWVyeShkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24gKCQpIHsKCQkJCS8qIGdsb2JhbCBmbGF0c29tZVZhcnMgKi8KCQkJCSd1c2Ugc3RyaWN0JwoJCQkJdmFyIGNvb2tpZUlkID0gJ2xpZ2h0Ym94X2hlYWRlci1uZXdzbGV0dGVyLXNpZ251cCcKCQkJCXZhciBjb29raWVWYWx1ZSA9ICdvcGVuZWRfMScKCQkJCXZhciB0aW1lciA9IHBhcnNlSW50KCczMDAwJywgMTApCgoJCQkJLy8gQXV0byBvcGVuIGxpZ2h0Ym94CgkJCQkKCQkJCS8vIFJ1biBsaWdodGJveCBpZiBubyBjb29raWUgaXMgc2V0CgkJCQlpZiAoRmxhdHNvbWUuY29va2llKGNvb2tpZUlkKSAhPT0gY29va2llVmFsdWUpIHsKCgkJCQkJLy8gRW5zdXJlIGNsb3Npbmcgb2ZmIGNhbnZhcwoJCQkJCXNldFRpbWVvdXQoZnVuY3Rpb24gKCkgewoJCQkJCQlpZiAoalF1ZXJ5LmZuLm1hZ25pZmljUG9wdXApIGpRdWVyeS5tYWduaWZpY1BvcHVwLmNsb3NlKCkKCQkJCQl9LCB0aW1lciAtIDM1MCkKCgkJCQkJLy8gT3BlbiBsaWdodGJveAoJCQkJCXNldFRpbWVvdXQoZnVuY3Rpb24gKCkgewoJCQkJCQkkLmxvYWRNYWduaWZpY1BvcHVwKCkudGhlbihmdW5jdGlvbigpIHsKCQkJCQkJCSQubWFnbmlmaWNQb3B1cC5vcGVuKHsKCQkJCQkJCQltaWRDbGljazogdHJ1ZSwKCQkJCQkJCQlyZW1vdmFsRGVsYXk6IDMwMCwKCQkJCQkJCQkvLyBjbG9zZUJ0bkluc2lkZTogZmxhdHNvbWVWYXJzLmxpZ2h0Ym94LmNsb3NlX2J0bl9pbnNpZGUsCgkJCQkJCQkJLy8gY2xvc2VNYXJrdXA6IGZsYXRzb21lVmFycy5saWdodGJveC5jbG9zZV9tYXJrdXAsCgkJCQkJCQkJaXRlbXM6IHsKCQkJCQkJCQkJc3JjOiAnI2hlYWRlci1uZXdzbGV0dGVyLXNpZ251cCcsCgkJCQkJCQkJCXR5cGU6ICdpbmxpbmUnCgkJCQkJCQkJfQoJCQkJCQkJfSkKCQkJCQkJfSkKCQkJCQl9LCB0aW1lcikKCgkJCQkJLy8gU2V0IGNvb2tpZQoJCQkJCUZsYXRzb21lLmNvb2tpZShjb29raWVJZCwgY29va2llVmFsdWUsIDM2NSkKCQkJCX0KCQkJfSkKCQk="></script>
+	
+	</li>
+
+<li class="account-item has-icon" >
+
+	<a href="https://monami.com.ar/mi-cuenta/" class="nav-top-link nav-top-not-logged-in is-small is-small" title="Acceder" data-open="#login-form-popup" >
+					<span>
+			Acceder			</span>
+				</a>
+
+
+
+
+</li>
+<li class="cart-item has-icon">
+
+<a href="https://monami.com.ar/carrito/" class="header-cart-link is-small off-canvas-toggle nav-top-link" title="Carrito" data-open="#cart-popup" data-class="off-canvas-cart" data-pos="right" >
+
+<span class="header-cart-title">
+          <span class="cart-price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>&nbsp;0,00</bdi></span></span>
+  </span>
+
+  <span class="image-icon header-cart-icon" data-icon-label="0">
+	<img class="cart-img-icon" alt="Carrito" src="https://monami.com.ar/wp-content/uploads/2023/07/icon-cart.svg" width="32" height="32"/>
+  </span>
+</a>
+
+
+
+  <!-- Cart Sidebar Popup -->
+  <div id="cart-popup" class="mfp-hide">
+  <div class="cart-popup-inner inner-padding cart-popup-inner--sticky">
+      <div class="cart-popup-title text-center">
+          <span class="heading-font uppercase">Carrito</span>
+          <div class="is-divider"></div>
+      </div>
+	  <div class="widget_shopping_cart">
+		  <div class="widget_shopping_cart_content">
+			  
+
+	<div class="ux-mini-cart-empty flex flex-row-col text-center pt pb">
+				<div class="ux-mini-cart-empty-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 19" style="opacity:.1;height:80px;">
+				<path d="M8.5 0C6.7 0 5.3 1.2 5.3 2.7v2H2.1c-.3 0-.6.3-.7.7L0 18.2c0 .4.2.8.6.8h15.7c.4 0 .7-.3.7-.7v-.1L15.6 5.4c0-.3-.3-.6-.7-.6h-3.2v-2c0-1.6-1.4-2.8-3.2-2.8zM6.7 2.7c0-.8.8-1.4 1.8-1.4s1.8.6 1.8 1.4v2H6.7v-2zm7.5 3.4 1.3 11.5h-14L2.8 6.1h2.5v1.4c0 .4.3.7.7.7.4 0 .7-.3.7-.7V6.1h3.5v1.4c0 .4.3.7.7.7s.7-.3.7-.7V6.1h2.6z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path>
+			</svg>
+		</div>
+				<p class="woocommerce-mini-cart__empty-message empty">No hay productos en el carrito.</p>
+					<p class="return-to-shop">
+				<a class="button primary wc-backward" href="https://monami.com.ar/tienda/">
+					Volver a la tienda				</a>
+			</p>
+				</div>
+
+
+		  </div>
+	  </div>
+              </div>
+  </div>
+
+</li>
+            </ul>
+          </div>
+
+          <!-- Mobile Right Elements -->
+          <div class="flex-col show-for-medium flex-right">
+            <ul class="mobile-nav nav nav-right ">
+              <li class="cart-item has-icon">
+
+
+		<a href="https://monami.com.ar/carrito/" class="header-cart-link is-small off-canvas-toggle nav-top-link" title="Carrito" data-open="#cart-popup" data-class="off-canvas-cart" data-pos="right" >
+
+  <span class="image-icon header-cart-icon" data-icon-label="0">
+	<img class="cart-img-icon" alt="Carrito" src="https://monami.com.ar/wp-content/uploads/2023/07/icon-cart.svg" width="32" height="32"/>
+  </span>
+</a>
+
+</li>
+
+<li class="account-item has-icon">
+		<a href="https://monami.com.ar/mi-cuenta/" class="account-link-mobile is-small" title="Mi cuenta" aria-label="Mi cuenta" >
+		<i class="icon-user" ></i>	</a>
+	</li>
+            </ul>
+          </div>
+
+      </div>
+
+      </div>
+<div id="wide-nav" class="header-bottom wide-nav nav-dark show-for-medium">
+    <div class="flex-row container">
+
+            
+            
+            
+                          <div class="flex-col show-for-medium flex-grow">
+                  <ul class="nav header-bottom-nav nav-center mobile-nav  nav-uppercase">
+                      <li class="header-search-form search-form html relative has-icon">
+	<div class="header-search-form-wrapper">
+		<div class="searchform-wrapper ux-search-box relative form-flat is-normal"><form role="search" method="get" class="searchform" action="https://monami.com.ar/">
+	<div class="flex-row relative">
+						<div class="flex-col flex-grow">
+			<label class="screen-reader-text" for="woocommerce-product-search-field-1">Buscar por:</label>
+			<input type="search" id="woocommerce-product-search-field-1" class="search-field mb-0" placeholder="Buscar" value="" name="s" />
+			<input type="hidden" name="post_type" value="product" />
+					</div>
+		<div class="flex-col">
+			<button type="submit" value="Buscar" class="ux-search-submit submit-button secondary button  icon mb-0" aria-label="Enviar">
+				<i class="icon-search" ></i>			</button>
+		</div>
+	</div>
+	<div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li>
+                  </ul>
+              </div>
+            
+    </div>
+</div>
+
+<div class="header-bg-container fill"><div class="header-bg-image fill"></div><div class="header-bg-color fill"></div></div>		</div>
+	</header>
+
+	
+	<main id="main" class="">
+
+
+<div id="content" role="main" class="content-area">
+
+		
+			
+	<section class="section tript-section-header" id="section_64089275">
+		<div class="section-bg fill" >
+			<img decoding="async" width="1920" height="900" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201920%20900%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/banner-home-principal3.jpg" class="lazy-load bg attachment-original size-original" alt="" />						
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+<div class="row row-collapse align-middle align-center"  id="row-670973774">
+
+	<div id="col-120193961" class="col tript-column-banner-principal medium-5 small-10 large-5"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1702411119">
+				<div data-parallax-fade="true" data-parallax="2">				<div class="img-inner dark" >
+			<img decoding="async" width="200" height="61" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20200%2061%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/07/monami-logo-rojo.png" class="lazy-load attachment-original size-original" alt="" />						
+					</div>
+				</div>				
+<style>
+#image_1702411119 {
+  width: 40%;
+}
+</style>
+	</div>
+	
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1235183313">
+				<div data-parallax-fade="true" data-parallax="2">				<div class="img-inner dark" >
+			<img decoding="async" width="401" height="93" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20401%2093%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/bien-hecho-text.svg" class="lazy-load attachment-original size-original" alt="" />						
+					</div>
+				</div>				
+<style>
+#image_1235183313 {
+  width: 70%;
+}
+@media (min-width:550px) {
+  #image_1235183313 {
+    width: 80%;
+  }
+}
+</style>
+	</div>
+	
+	<div id="text-624270484" class="text">
+		
+<p>Porque tiene carne fresca, mucho amor y lo hacemos en Argentina para todo el mundo.<br />
+		
+<style>
+#text-624270484 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (min-width:550px) {
+  #text-624270484 {
+    font-size: 1.5rem;
+    line-height: 0.75;
+  }
+}
+</style>
+	</div>
+	
+<a href="/tienda/" class="button primary"  >
+		<span>Descubrilo</span>
+	</a>
+
+		</div>
+				
+<style>
+#col-120193961 > .col-inner {
+  padding: 5em 0px 5em 0px;
+}
+</style>
+	</div>
+
+	
+</div>
+		</div>
+
+		
+<style>
+#section_64089275 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+}
+#section_64089275 .section-bg img {
+  object-position: 100% 100%;
+}
+@media (min-width:550px) {
+  #section_64089275 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+</style>
+	</section>
+	
+
+	<section class="section tript-section-info-alim has-parallax" id="section_330580516">
+		<div class="section-bg fill" data-parallax-container=".section" data-parallax-background data-parallax="-2">
+			<img decoding="async" width="1920" height="1080" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201920%201080%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/banner-home-principal2.jpg" class="lazy-load bg attachment-original size-original" alt="" />						
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+<div class="row row-full-width align-middle align-center"  id="row-586349873">
+
+	<div id="col-1581308495" class="col medium-7 small-11 large-7"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div id="text-2520260440" class="text">
+		
+<h3>Alimento Human Grade y Natural, Snacks Saludables y rutinas de Cuidado Dental para perros y gatos.</h3>
+		
+<style>
+#text-2520260440 {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (min-width:550px) {
+  #text-2520260440 {
+    font-size: 1.7rem;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+				
+<style>
+#col-1581308495 > .col-inner {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+@media (min-width:550px) {
+  #col-1581308495 > .col-inner {
+    padding: 0px 4.5em 0px 4.5em;
+  }
+}
+</style>
+	</div>
+
+	
+</div>
+<div class="row row-collapse row-full-width align-middle align-center show-for-small"  id="row-457438357">
+
+	<div id="col-1129948966" class="col medium-7 small-12 large-7"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_768625209">
+								<div class="img-inner dark" >
+			<img decoding="async" width="800" height="254" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20254%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos2.png" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos2.png 800w, https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos2-300x95.png 300w, https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos2-768x244.png 768w, https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos2-247x78.png 247w, https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos2-400x127.png 400w" sizes="auto, (max-width: 800px) 100vw, 800px" />						
+					</div>
+								
+<style>
+#image_768625209 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+		</div>
+				
+<style>
+#col-1129948966 > .col-inner {
+  padding: 0px 0px 0px 0px;
+  margin: -2em 0px 1em 0px;
+}
+@media (min-width:550px) {
+  #col-1129948966 > .col-inner {
+    padding: 0px 4.5em 0px 4.5em;
+    margin: 0px 0px 0px 0px;
+  }
+}
+</style>
+	</div>
+
+	
+</div>
+<div class="row row-full-width align-middle align-center"  id="row-65306952">
+
+	<div id="col-1358899539" class="col medium-6 small-11 large-6"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div id="text-2108062294" class="text">
+		
+<p>Amamos lo que hacemos, todos los días. Llevamos alegría, sabor, conexión y salud a miles de familias multi-especie argentinas y de otros países.</p>
+<p>Brindamos el mayor estándar de calidad de la industria de Pet Food de la región, convencidos de que, si son parte de la familia, merecen lo mejor.<br />
+		
+<style>
+#text-2108062294 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (min-width:550px) {
+  #text-2108062294 {
+    font-size: 1.5rem;
+  }
+}
+</style>
+	</div>
+	
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1159896731">
+								<div class="img-inner dark" style="margin:3em 0px 0px 0px;">
+			<img decoding="async" width="125" height="74" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20125%2074%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/bandera-arg.jpg" class="lazy-load attachment-original size-original" alt="" />						
+					</div>
+								
+<style>
+#image_1159896731 {
+  width: 20%;
+}
+@media (min-width:550px) {
+  #image_1159896731 {
+    width: 30%;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+				
+<style>
+#col-1358899539 > .col-inner {
+  padding: 0px 0em 0px 0em;
+}
+@media (min-width:550px) {
+  #col-1358899539 > .col-inner {
+    padding: 0px 9em 0px 9em;
+  }
+}
+</style>
+	</div>
+
+	
+</div>
+<div class="row row-collapse row-full-width align-bottom show-for-small"  id="row-1909664100">
+
+	<div id="col-721583664" class="col medium-7 small-12 large-7"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_357159871">
+								<div class="img-inner dark" >
+			<img decoding="async" width="800" height="514" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20514%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos1.png" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos1.png 800w, https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos1-300x193.png 300w, https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos1-768x493.png 768w, https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos1-247x159.png 247w, https://monami.com.ar/wp-content/uploads/2023/09/banner-mobile-alimentos1-400x257.png 400w" sizes="auto, (max-width: 800px) 100vw, 800px" />						
+					</div>
+								
+<style>
+#image_357159871 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+		</div>
+				
+<style>
+#col-721583664 > .col-inner {
+  padding: 0px 0px 0px 0px;
+  margin: -5em 0px 0px 0px;
+}
+@media (min-width:550px) {
+  #col-721583664 > .col-inner {
+    padding: 0px 4.5em 0px 4.5em;
+    margin: 0px 0px 0px 0px;
+  }
+}
+</style>
+	</div>
+
+	
+</div>
+		</div>
+
+		
+<style>
+#section_330580516 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#section_330580516 .section-bg img {
+  object-position: 48% 100%;
+}
+@media (min-width:550px) {
+  #section_330580516 {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+}
+</style>
+	</section>
+	
+
+	<section class="section tript-section-img-pollo hide-for-medium" id="section_1943357749">
+		<div class="section-bg fill" >
+									
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+<div class="row row-collapse row-full-width align-equal align-center"  id="row-1739100654">
+
+	<div id="col-1984170267" class="col small-12 large-12"  >
+				<div class="col-inner text-right"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1344627331">
+								<div class="img-inner dark" >
+			<img decoding="async" width="347" height="342" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20347%20342%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/plato-pollo.png" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/08/plato-pollo.png 347w, https://monami.com.ar/wp-content/uploads/2023/08/plato-pollo-300x296.png 300w, https://monami.com.ar/wp-content/uploads/2023/08/plato-pollo-247x243.png 247w, https://monami.com.ar/wp-content/uploads/2023/08/plato-pollo-100x100.png 100w" sizes="auto, (max-width: 347px) 100vw, 347px" />						
+					</div>
+								
+<style>
+#image_1344627331 {
+  width: 25%;
+}
+</style>
+	</div>
+	
+		</div>
+				
+<style>
+#col-1984170267 > .col-inner {
+  margin: -17em 0px 0px 8em;
+}
+</style>
+	</div>
+
+	
+</div>
+		</div>
+
+		
+<style>
+#section_1943357749 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+</style>
+	</section>
+	
+
+	<section class="section tript-section-sliders" id="section_82079222">
+		<div class="section-bg fill" >
+									
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+<div class="slider-wrapper relative" id="slider-2065490001" >
+    <div class="slider slider-nav-simple slider-nav-large slider-nav-dark slider-style-normal slider-show-nav"
+        data-flickity-options='{
+            "cellAlign": "center",
+            "imagesLoaded": true,
+            "lazyLoad": 1,
+            "freeScroll": false,
+            "wrapAround": true,
+            "autoPlay": 3000,
+            "pauseAutoPlayOnHover" : false,
+            "prevNextButtons": true,
+            "contain" : true,
+            "adaptiveHeight" : true,
+            "dragThreshold" : 10,
+            "percentPosition": true,
+            "pageDots": false,
+            "rightToLeft": false,
+            "draggable": true,
+            "selectedAttraction": 0.1,
+            "parallax" : 0,
+            "friction": 0.6        }'
+        >
+        
+
+	<section class="section" id="section_29979988">
+		<div class="section-bg fill" >
+									
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+<div class="row row-collapse row-full-width align-middle align-center"  id="row-122169910">
+
+	<div id="col-1546059390" class="col medium-8 small-11 large-8"  >
+				<div class="col-inner"  >
+			
+			
+	<div id="text-603624517" class="text">
+		
+<p>Elaboradas con carne fresca argentina e ingredientes #SuperFood, nuestras recetas tienen todos los nutrientes necesarios para llenar platos, panzas y corazones caninos y felinos.<br />
+		
+<style>
+#text-603624517 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-603624517 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-603624517 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+	</div>
+	
+	<div id="text-2117914698" class="text">
+		
+<h1>ALIMENTO</h1>
+		
+<style>
+#text-2117914698 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-2117914698 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-2117914698 {
+    font-size: 3.3rem;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-991824043" class="col small-12 large-12"  >
+				<div class="col-inner"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1589438767">
+								<div class="img-inner dark" >
+			<img decoding="async" width="1920" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201920%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/banner-slider1-2.jpg" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/08/banner-slider1-2.jpg 1920w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider1-2-300x78.jpg 300w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider1-2-1024x267.jpg 1024w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider1-2-768x200.jpg 768w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider1-2-1536x400.jpg 1536w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider1-2-247x64.jpg 247w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider1-2-400x104.jpg 400w" sizes="auto, (max-width: 1920px) 100vw, 1920px" />						
+					</div>
+								
+<style>
+#image_1589438767 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-2023907485" class="col medium-8 small-11 large-8"  >
+				<div class="col-inner"  >
+			
+			
+	<div id="text-3801855563" class="text">
+		
+<h1>SALUDABLE</h1>
+		
+<style>
+#text-3801855563 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-3801855563 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-3801855563 {
+    font-size: 3.3rem;
+  }
+}
+</style>
+	</div>
+	
+	<div id="text-3802841461" class="text">
+		
+<p>Nuestras presentaciones marcan la diferencia y conservan el sabor y la frescura de cada producto hasta el momento del consumo.<br />
+		
+<style>
+#text-3802841461 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-3802841461 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-3802841461 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+</div>
+		</div>
+
+		
+<style>
+#section_29979988 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 600px;
+  background-color: rgb(233, 22, 56);
+}
+@media (min-width:550px) {
+  #section_29979988 {
+    min-height: 800px;
+  }
+}
+</style>
+	</section>
+	
+
+	<section class="section" id="section_528039436">
+		<div class="section-bg fill" >
+									
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+<div class="row row-collapse row-full-width align-middle align-center"  id="row-1356776415">
+
+	<div id="col-1134817929" class="col medium-8 small-11 large-8"  >
+				<div class="col-inner"  >
+			
+			
+	<div id="text-4170516687" class="text">
+		
+<p>Elaboradas con carne fresca argentina e ingredientes superfood, nuestras recetas contienen todos los nutrientes necesarios para llenar platos, panzas y corazones caninos y felinos.<br />
+		
+<style>
+#text-4170516687 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-4170516687 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-4170516687 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+	</div>
+	
+	<div id="text-3082431207" class="text">
+		
+<h1>ALIMENTO</h1>
+		
+<style>
+#text-3082431207 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-3082431207 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-3082431207 {
+    font-size: 3.3rem;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-1769622826" class="col small-12 large-12"  >
+				<div class="col-inner"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1180297962">
+								<div class="img-inner dark" >
+			<img decoding="async" width="1920" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201920%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/banner-slider2.jpg" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/08/banner-slider2.jpg 1920w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider2-300x78.jpg 300w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider2-1024x267.jpg 1024w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider2-768x200.jpg 768w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider2-1536x400.jpg 1536w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider2-247x64.jpg 247w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider2-400x104.jpg 400w" sizes="auto, (max-width: 1920px) 100vw, 1920px" />						
+					</div>
+								
+<style>
+#image_1180297962 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-1233429256" class="col medium-8 small-11 large-8"  >
+				<div class="col-inner"  >
+			
+			
+	<div id="text-1440315593" class="text">
+		
+<h1>GATOS</h1>
+		
+<style>
+#text-1440315593 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-1440315593 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-1440315593 {
+    font-size: 3.3rem;
+  }
+}
+</style>
+	</div>
+	
+	<div id="text-2818138584" class="text">
+		
+<p>Caja de alimento saludable con Superfood para Razas Medianas y Grandes 12KG. Presentado en 60 bolsitas de 200gr c/u que garantizan la mejor palatabilidad y frescura a la hora del consumo.<br />
+		
+<style>
+#text-2818138584 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-2818138584 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-2818138584 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+</div>
+		</div>
+
+		
+<style>
+#section_528039436 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 600px;
+  background-color: rgb(220, 182, 76);
+}
+@media (min-width:550px) {
+  #section_528039436 {
+    min-height: 800px;
+  }
+}
+</style>
+	</section>
+	
+
+	<section class="section" id="section_199266238">
+		<div class="section-bg fill" >
+									
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+<div class="row row-collapse row-full-width align-middle align-center"  id="row-1199503763">
+
+	<div id="col-1373833825" class="col medium-8 small-11 large-8"  >
+				<div class="col-inner"  >
+			
+			
+	<div id="text-355506285" class="text">
+		
+<p>Innovadores y únicos en el mercado argentino, nuestros pet treats a base de carne fresca son nuestra familia estrella de productos Mon Ami para fortalecer el vínculo a través del lenguaje de recompensa.<br />
+		
+<style>
+#text-355506285 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-355506285 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-355506285 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+	</div>
+	
+	<div id="text-1247749894" class="text">
+		
+<h1>SNACKS</h1>
+		
+<style>
+#text-1247749894 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-1247749894 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-1247749894 {
+    font-size: 3.3rem;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-821706626" class="col small-12 large-12"  >
+				<div class="col-inner"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_885205503">
+								<div class="img-inner dark" >
+			<img decoding="async" width="1920" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201920%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/banner-slider3.jpg" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/08/banner-slider3.jpg 1920w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider3-300x78.jpg 300w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider3-1024x267.jpg 1024w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider3-768x200.jpg 768w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider3-1536x400.jpg 1536w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider3-247x64.jpg 247w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider3-400x104.jpg 400w" sizes="auto, (max-width: 1920px) 100vw, 1920px" />						
+					</div>
+								
+<style>
+#image_885205503 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-2031930766" class="col medium-8 small-11 large-8"  >
+				<div class="col-inner"  >
+			
+			
+	<div id="text-3829553788" class="text">
+		
+<h1>SALUDABLES</h1>
+		
+<style>
+#text-3829553788 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-3829553788 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-3829553788 {
+    font-size: 3.3rem;
+  }
+}
+</style>
+	</div>
+	
+	<div id="text-950896576" class="text">
+		
+<p>Caja de alimento saludable con Superfood para Razas Medianas y Grandes 12KG. Presentado en 60 bolsitas de 200gr c/u que garantizan la mejor palatabilidad y frescura a la hora del consumo.<br />
+		
+<style>
+#text-950896576 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-950896576 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-950896576 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+</div>
+		</div>
+
+		
+<style>
+#section_199266238 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 600px;
+  background-color: rgb(135, 190, 199);
+}
+@media (min-width:550px) {
+  #section_199266238 {
+    min-height: 800px;
+  }
+}
+</style>
+	</section>
+	
+
+	<section class="section" id="section_457899641">
+		<div class="section-bg fill" >
+									
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+<div class="row row-collapse row-full-width align-middle align-center"  id="row-942266384">
+
+	<div id="col-708345281" class="col medium-8 small-11 large-8"  >
+				<div class="col-inner"  >
+			
+			
+	<div id="text-1254447555" class="text">
+		
+<p>Nuestros dental treats están diseñados para eliminar el sarro, prevenir enfermedades bucales y contribuir a la relajación a través de la masticación.<br />
+		
+<style>
+#text-1254447555 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-1254447555 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-1254447555 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+	</div>
+	
+	<div id="text-3860766595" class="text">
+		
+<h1>CUIDADO</h1>
+		
+<style>
+#text-3860766595 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-3860766595 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-3860766595 {
+    font-size: 3.3rem;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-1234888097" class="col small-12 large-12"  >
+				<div class="col-inner"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_791991398">
+								<div class="img-inner dark" >
+			<img decoding="async" width="1920" height="500" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201920%20500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/banner-slider4.jpg" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/08/banner-slider4.jpg 1920w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider4-300x78.jpg 300w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider4-1024x267.jpg 1024w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider4-768x200.jpg 768w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider4-1536x400.jpg 1536w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider4-247x64.jpg 247w, https://monami.com.ar/wp-content/uploads/2023/08/banner-slider4-400x104.jpg 400w" sizes="auto, (max-width: 1920px) 100vw, 1920px" />						
+					</div>
+								
+<style>
+#image_791991398 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-1537465538" class="col medium-8 small-11 large-8"  >
+				<div class="col-inner"  >
+			
+			
+	<div id="text-1956282362" class="text">
+		
+<h1>DENTAL</h1>
+		
+<style>
+#text-1956282362 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-1956282362 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-1956282362 {
+    font-size: 3.3rem;
+  }
+}
+</style>
+	</div>
+	
+	<div id="text-574184857" class="text">
+		
+<p>Caja de alimento saludable con Superfood para Razas Medianas y Grandes 12KG. Presentado en 60 bolsitas de 200gr c/u que garantizan la mejor palatabilidad y frescura a la hora del consumo.<br />
+		
+<style>
+#text-574184857 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-574184857 > * {
+  color: rgb(255,255,255);
+}
+@media (min-width:550px) {
+  #text-574184857 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+</div>
+		</div>
+
+		
+<style>
+#section_457899641 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 600px;
+  background-color: rgb(109, 127, 184);
+}
+@media (min-width:550px) {
+  #section_457899641 {
+    min-height: 800px;
+  }
+}
+</style>
+	</section>
+	
+     </div>
+
+     <div class="loading-spin dark large centered"></div>
+
+	</div>
+
+
+		</div>
+
+		
+<style>
+#section_82079222 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+</style>
+	</section>
+	
+
+	<section class="section tript-section-best-sellers" id="section_1891735870">
+		<div class="section-bg fill" >
+									
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+<div class="row row-large align-middle align-center"  id="row-1965417572">
+
+	<div id="col-774335726" class="col medium-7 small-12 large-7"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div id="text-2346160302" class="text">
+		
+<h1>Best Sellers</h1>
+		
+<style>
+#text-2346160302 {
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+</style>
+	</div>
+	
+	<div id="text-2398595259" class="text">
+		
+<p>Te presentamos a los nuevos lanzamientos y favoritos de nuestra comunidad.<br />
+		
+<style>
+#text-2398595259 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+@media (min-width:550px) {
+  #text-2398595259 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+	</div>
+	
+<a href="/tienda/" class="button primary"  >
+		<span>Comprar</span>
+	</a>
+
+		</div>
+				
+<style>
+#col-774335726 > .col-inner {
+  padding: 0px 3em 0px 3em;
+}
+</style>
+	</div>
+
+	
+
+	<div id="col-102752065" class="col medium-6 small-6 large-6"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_597411097">
+								<div class="img-inner dark" >
+			<img decoding="async" width="339" height="92" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20339%2092%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/95-carne-1.svg" class="lazy-load attachment-original size-original" alt="" />						
+					</div>
+								
+<style>
+#image_597411097 {
+  width: 100%;
+}
+@media (min-width:550px) {
+  #image_597411097 {
+    width: 50%;
+  }
+}
+</style>
+	</div>
+	
+<div class="row"  id="row-1013926167">
+
+	<div id="col-2032551522" class="col medium-6 small-12 large-6"  >
+				<div class="col-inner"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1047755527">
+		<a class="" href="/tienda/" >		<div data-parallax-fade="true" data-parallax="1">				<div class="img-inner dark" >
+			<img decoding="async" width="340" height="340" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20340%20340%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/meat-sticks.jpg" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/08/meat-sticks.jpg 340w, https://monami.com.ar/wp-content/uploads/2023/08/meat-sticks-300x300.jpg 300w, https://monami.com.ar/wp-content/uploads/2023/08/meat-sticks-150x150.jpg 150w, https://monami.com.ar/wp-content/uploads/2023/08/meat-sticks-247x247.jpg 247w, https://monami.com.ar/wp-content/uploads/2023/08/meat-sticks-100x100.jpg 100w" sizes="auto, (max-width: 340px) 100vw, 340px" />						
+					</div>
+				</div>		</a>		
+<style>
+#image_1047755527 {
+  width: 90%;
+}
+@media (min-width:550px) {
+  #image_1047755527 {
+    width: 100%;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-1145823608" class="col medium-6 small-12 large-6"  >
+				<div class="col-inner"  >
+			
+			
+	<div id="text-2051397473" class="text">
+		
+<h1>Meat Sticks</h1>
+<p>Snacks extremadamente deliciosos, preparados con un 95% de carne fresca en tres irresistibles variedades: carne vacuna, pollo y cordero.<br />
+		
+<style>
+#text-2051397473 {
+  font-size: 1rem;
+  text-align: left;
+}
+@media (min-width:550px) {
+  #text-2051397473 {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+</div>
+		</div>
+					</div>
+
+	
+
+	<div id="col-1626616953" class="col medium-6 small-6 large-6"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_859461096">
+								<div class="img-inner dark" >
+			<img decoding="async" width="339" height="88" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20339%2088%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/extra-colageno.svg" class="lazy-load attachment-original size-original" alt="" />						
+					</div>
+								
+<style>
+#image_859461096 {
+  width: 100%;
+}
+@media (min-width:550px) {
+  #image_859461096 {
+    width: 50%;
+  }
+}
+</style>
+	</div>
+	
+<div class="row"  id="row-404979942">
+
+	<div id="col-966402786" class="col medium-6 small-12 large-6"  >
+				<div class="col-inner"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_2098309806">
+		<a class="" href="/tienda/" >		<div data-parallax-fade="true" data-parallax="1">				<div class="img-inner dark" >
+			<img decoding="async" width="340" height="340" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20340%20340%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/collagen-chew-treat.jpg" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/08/collagen-chew-treat.jpg 340w, https://monami.com.ar/wp-content/uploads/2023/08/collagen-chew-treat-300x300.jpg 300w, https://monami.com.ar/wp-content/uploads/2023/08/collagen-chew-treat-150x150.jpg 150w, https://monami.com.ar/wp-content/uploads/2023/08/collagen-chew-treat-247x247.jpg 247w, https://monami.com.ar/wp-content/uploads/2023/08/collagen-chew-treat-100x100.jpg 100w" sizes="auto, (max-width: 340px) 100vw, 340px" />						
+					</div>
+				</div>		</a>		
+<style>
+#image_2098309806 {
+  width: 90%;
+}
+@media (min-width:550px) {
+  #image_2098309806 {
+    width: 100%;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-768472680" class="col medium-6 small-12 large-6"  >
+				<div class="col-inner"  >
+			
+			
+	<div id="text-2763830154" class="text">
+		
+<h1>Collagen Chew Treats</h1>
+<p>Sticks ideales para añadir la dosis justa de colágeno diaria en la dieta de los perros, mejorar la salud de su pelo, piel, músculos y huesos.<br />
+		
+<style>
+#text-2763830154 {
+  font-size: 1rem;
+  text-align: left;
+}
+@media (min-width:550px) {
+  #text-2763830154 {
+    font-size: 1.2rem;
+  }
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+</div>
+		</div>
+					</div>
+
+	
+</div>
+		</div>
+
+		
+<style>
+#section_1891735870 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width:550px) {
+  #section_1891735870 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+</style>
+	</section>
+	
+
+	<section class="section tript-section-sumate has-parallax" id="section_1273006011">
+		<div class="section-bg fill" data-parallax-container=".section" data-parallax-background data-parallax="-1">
+			<img decoding="async" width="1800" height="925" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201800%20925%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/section-home-sumate-2.svg" class="lazy-load bg attachment-original size-original" alt="" />						
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+<div class="row row-small align-middle align-center"  id="row-177836435">
+
+	<div id="col-823614796" class="col medium-8 small-12 large-8"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_669159220">
+								<div class="img-inner dark" >
+			<img decoding="async" width="456" height="183" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20456%20183%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/texto-sumate.svg" class="lazy-load attachment-original size-original" alt="" />						
+					</div>
+								
+<style>
+#image_669159220 {
+  width: 87%;
+}
+@media (min-width:550px) {
+  #image_669159220 {
+    width: 50%;
+  }
+}
+</style>
+	</div>
+	
+	<div class="img has-hover hide-for-small x md-x lg-x y md-y lg-y" id="image_1853475087">
+								<div class="img-inner dark" >
+			<img decoding="async" width="455" height="76" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20455%2076%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/sumate-flechas.svg" class="lazy-load attachment-original size-original" alt="" />						
+					</div>
+								
+<style>
+#image_1853475087 {
+  width: 65%;
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-622861292" class="col medium-6 small-6 large-6"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1927114619">
+		<a class="" href="https://www.instagram.com/monamimascotas/" >						<div class="img-inner dark" >
+			<img decoding="async" width="374" height="314" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20374%20314%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/img-instagram.jpg" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/08/img-instagram.jpg 374w, https://monami.com.ar/wp-content/uploads/2023/08/img-instagram-300x252.jpg 300w, https://monami.com.ar/wp-content/uploads/2023/08/img-instagram-247x207.jpg 247w" sizes="auto, (max-width: 374px) 100vw, 374px" />						
+					</div>
+						</a>		
+<style>
+#image_1927114619 {
+  width: 70%;
+}
+@media (min-width:550px) {
+  #image_1927114619 {
+    width: 50%;
+  }
+}
+</style>
+	</div>
+	
+	<div id="text-2398499907" class="text">
+		
+<h1>Instagram</h1>
+		
+<style>
+#text-2398499907 {
+  text-align: center;
+}
+</style>
+	</div>
+	
+		</div>
+				
+<style>
+#col-622861292 > .col-inner {
+  margin: 0px 0px 0px 0em;
+}
+@media (min-width:550px) {
+  #col-622861292 > .col-inner {
+    margin: 0px 0px 0px 5em;
+  }
+}
+</style>
+	</div>
+
+	
+
+	<div id="col-138718110" class="col medium-6 small-6 large-6"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1987381024">
+		<a class="" href="https://www.linkedin.com/company/marinicia-sa/about/" >						<div class="img-inner dark" >
+			<img decoding="async" width="367" height="308" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20367%20308%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/img-linkedin.jpg" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/08/img-linkedin.jpg 367w, https://monami.com.ar/wp-content/uploads/2023/08/img-linkedin-300x252.jpg 300w, https://monami.com.ar/wp-content/uploads/2023/08/img-linkedin-247x207.jpg 247w" sizes="auto, (max-width: 367px) 100vw, 367px" />						
+					</div>
+						</a>		
+<style>
+#image_1987381024 {
+  width: 70%;
+}
+@media (min-width:550px) {
+  #image_1987381024 {
+    width: 50%;
+  }
+}
+</style>
+	</div>
+	
+	<div id="text-2092240809" class="text">
+		
+<h1>LinkedIn</h1>
+		
+<style>
+#text-2092240809 {
+  text-align: center;
+}
+</style>
+	</div>
+	
+		</div>
+				
+<style>
+#col-138718110 > .col-inner {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+@media (min-width:550px) {
+  #col-138718110 > .col-inner {
+    margin: 0px 0px 0px -5em;
+  }
+}
+</style>
+	</div>
+
+	
+
+<style>
+#row-177836435 > .col > .col-inner {
+  padding: 0px 0px 0px 0px;
+}
+</style>
+</div>
+		</div>
+
+		
+<style>
+#section_1273006011 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 0px;
+}
+#section_1273006011 .section-bg img {
+  object-position: 50% 100%;
+}
+@media (min-width:550px) {
+  #section_1273006011 {
+    min-height: 800px;
+  }
+}
+</style>
+	</section>
+	
+
+	<section class="section tript-section-formulario" id="section_1101090209">
+		<div class="section-bg fill" >
+									
+			
+
+		</div>
+
+			<div class="ux-shape-divider ux-shape-divider--top ux-shape-divider--style-curve-2">
+		<svg viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+	<path class="ux-shape-fill" d="M-24 100C493.5 -2.66667 804 -2.66667 1011 100H-24Z"/>
+</svg>
+	</div>
+
+
+		<div class="section-content relative">
+			
+<div class="row align-middle align-center"  id="row-400604919">
+
+	<div id="col-1314445458" class="col hide-for-small medium-2 small-12 large-2"  >
+				<div class="col-inner"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_326825081">
+								<div class="img-inner dark" >
+			<img decoding="async" width="36" height="43" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2036%2043%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/Imagen-9.png" class="lazy-load attachment-original size-original" alt="" />						
+					</div>
+								
+<style>
+#image_326825081 {
+  width: 20%;
+}
+</style>
+	</div>
+	
+		</div>
+					</div>
+
+	
+
+	<div id="col-2021567569" class="col medium-5 small-10 large-5"  >
+				<div class="col-inner"  >
+			
+			
+	<div id="text-704210537" class="text">
+		
+<h1>¿Querés recibir información exclusiva y beneficios de Mon Ami?</h1>
+		
+<style>
+#text-704210537 {
+  text-align: center;
+}
+</style>
+	</div>
+	
+	<div id="text-3352411489" class="text">
+		
+<p>Dejanos tus datos y te agregamos a la lista:<br />
+		
+<style>
+#text-3352411489 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+@media (min-width:550px) {
+  #text-3352411489 {
+    font-size: 1.4rem;
+  }
+}
+</style>
+	</div>
+	
+
+
+                <div class='gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework tript-formulario-home_wrapper' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_3' >
+                        <div class='gform_heading'>
+                            <p class='gform_description'></p>
+							<p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; señala los campos obligatorios</p>
+                        </div><form method='post' enctype='multipart/form-data'  id='gform_3' class='tript-formulario-home' action='/' data-formid='3' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_3' class='gform_fields top_label form_sublabel_below description_below validation_below'><div id="field_3_1" class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload="field_3_1" ><label class='gfield_label gform-field-label' for='input_3_1'>Nombre<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_1' id='input_3_1' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /></div></div><div id="field_3_4" class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload="field_3_4" ><label class='gfield_label gform-field-label' for='input_3_4'>Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_4' id='input_3_4' type='email' value='' class='large'    aria-required="true" aria-invalid="false"  />
+                        </div></div></div></div>
+        <div class='gform-footer gform_footer top_label'> <input type='image' src='/wp-content/uploads/2023/08/btn-sumate-home.svg' id='gform_submit_button_3' onclick='gform.submission.handleButtonClick(this);' class='gform_button button gform_image_button' alt='Enviar'  /> 
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_3' value='postback' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_3' id='gform_theme_3' value='gravity-theme' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_3' id='gform_style_settings_3' value='[]' />
+            <input type='hidden' class='gform_hidden' name='is_submit_3' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='3' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_3' value='WyJbXSIsIjIyOWExMGY5MmY1NTgzMDY0ZGMzYzA4NTEyZGYwOTk0Il0=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_3' id='gform_target_page_number_3' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_3' id='gform_source_page_number_3' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script type="text/javascript" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwogZ2Zvcm0uaW5pdGlhbGl6ZU9uTG9hZGVkKCBmdW5jdGlvbigpIHtnZm9ybUluaXRTcGlubmVyKCAzLCAnaHR0cHM6Ly9tb25hbWkuY29tLmFyL3dwLWNvbnRlbnQvcGx1Z2lucy9ncmF2aXR5Zm9ybXMvaW1hZ2VzL3NwaW5uZXIuc3ZnJywgdHJ1ZSApO2pRdWVyeSgnI2dmb3JtX2FqYXhfZnJhbWVfMycpLm9uKCdsb2FkJyxmdW5jdGlvbigpe3ZhciBjb250ZW50cyA9IGpRdWVyeSh0aGlzKS5jb250ZW50cygpLmZpbmQoJyonKS5odG1sKCk7dmFyIGlzX3Bvc3RiYWNrID0gY29udGVudHMuaW5kZXhPZignR0ZfQUpBWF9QT1NUQkFDSycpID49IDA7aWYoIWlzX3Bvc3RiYWNrKXtyZXR1cm47fXZhciBmb3JtX2NvbnRlbnQgPSBqUXVlcnkodGhpcykuY29udGVudHMoKS5maW5kKCcjZ2Zvcm1fd3JhcHBlcl8zJyk7dmFyIGlzX2NvbmZpcm1hdGlvbiA9IGpRdWVyeSh0aGlzKS5jb250ZW50cygpLmZpbmQoJyNnZm9ybV9jb25maXJtYXRpb25fd3JhcHBlcl8zJykubGVuZ3RoID4gMDt2YXIgaXNfcmVkaXJlY3QgPSBjb250ZW50cy5pbmRleE9mKCdnZm9ybVJlZGlyZWN0KCl7JykgPj0gMDt2YXIgaXNfZm9ybSA9IGZvcm1fY29udGVudC5sZW5ndGggPiAwICYmICEgaXNfcmVkaXJlY3QgJiYgISBpc19jb25maXJtYXRpb247dmFyIG10ID0gcGFyc2VJbnQoalF1ZXJ5KCdodG1sJykuY3NzKCdtYXJnaW4tdG9wJyksIDEwKSArIHBhcnNlSW50KGpRdWVyeSgnYm9keScpLmNzcygnbWFyZ2luLXRvcCcpLCAxMCkgKyAxMDA7aWYoaXNfZm9ybSl7alF1ZXJ5KCcjZ2Zvcm1fd3JhcHBlcl8zJykuaHRtbChmb3JtX2NvbnRlbnQuaHRtbCgpKTtpZihmb3JtX2NvbnRlbnQuaGFzQ2xhc3MoJ2dmb3JtX3ZhbGlkYXRpb25fZXJyb3InKSl7alF1ZXJ5KCcjZ2Zvcm1fd3JhcHBlcl8zJykuYWRkQ2xhc3MoJ2dmb3JtX3ZhbGlkYXRpb25fZXJyb3InKTt9IGVsc2Uge2pRdWVyeSgnI2dmb3JtX3dyYXBwZXJfMycpLnJlbW92ZUNsYXNzKCdnZm9ybV92YWxpZGF0aW9uX2Vycm9yJyk7fXNldFRpbWVvdXQoIGZ1bmN0aW9uKCkgeyAvKiBkZWxheSB0aGUgc2Nyb2xsIGJ5IDUwIG1pbGxpc2Vjb25kcyB0byBmaXggYSBidWcgaW4gY2hyb21lICovICB9LCA1MCApO2lmKHdpbmRvd1snZ2Zvcm1Jbml0RGF0ZXBpY2tlciddKSB7Z2Zvcm1Jbml0RGF0ZXBpY2tlcigpO31pZih3aW5kb3dbJ2dmb3JtSW5pdFByaWNlRmllbGRzJ10pIHtnZm9ybUluaXRQcmljZUZpZWxkcygpO312YXIgY3VycmVudF9wYWdlID0galF1ZXJ5KCcjZ2Zvcm1fc291cmNlX3BhZ2VfbnVtYmVyXzMnKS52YWwoKTtnZm9ybUluaXRTcGlubmVyKCAzLCAnaHR0cHM6Ly9tb25hbWkuY29tLmFyL3dwLWNvbnRlbnQvcGx1Z2lucy9ncmF2aXR5Zm9ybXMvaW1hZ2VzL3NwaW5uZXIuc3ZnJywgdHJ1ZSApO2pRdWVyeShkb2N1bWVudCkudHJpZ2dlcignZ2Zvcm1fcGFnZV9sb2FkZWQnLCBbMywgY3VycmVudF9wYWdlXSk7d2luZG93WydnZl9zdWJtaXR0aW5nXzMnXSA9IGZhbHNlO31lbHNlIGlmKCFpc19yZWRpcmVjdCl7dmFyIGNvbmZpcm1hdGlvbl9jb250ZW50ID0galF1ZXJ5KHRoaXMpLmNvbnRlbnRzKCkuZmluZCgnLkdGX0FKQVhfUE9TVEJBQ0snKS5odG1sKCk7aWYoIWNvbmZpcm1hdGlvbl9jb250ZW50KXtjb25maXJtYXRpb25fY29udGVudCA9IGNvbnRlbnRzO31qUXVlcnkoJyNnZm9ybV93cmFwcGVyXzMnKS5yZXBsYWNlV2l0aChjb25maXJtYXRpb25fY29udGVudCk7alF1ZXJ5KGRvY3VtZW50KS50cmlnZ2VyKCdnZm9ybV9jb25maXJtYXRpb25fbG9hZGVkJywgWzNdKTt3aW5kb3dbJ2dmX3N1Ym1pdHRpbmdfMyddID0gZmFsc2U7d3AuYTExeS5zcGVhayhqUXVlcnkoJyNnZm9ybV9jb25maXJtYXRpb25fbWVzc2FnZV8zJykudGV4dCgpKTt9ZWxzZXtqUXVlcnkoJyNnZm9ybV8zJykuYXBwZW5kKGNvbnRlbnRzKTtpZih3aW5kb3dbJ2dmb3JtUmVkaXJlY3QnXSkge2dmb3JtUmVkaXJlY3QoKTt9fWpRdWVyeShkb2N1bWVudCkudHJpZ2dlcigiZ2Zvcm1fcHJlX3Bvc3RfcmVuZGVyIiwgW3sgZm9ybUlkOiAiMyIsIGN1cnJlbnRQYWdlOiAiY3VycmVudF9wYWdlIiwgYWJvcnQ6IGZ1bmN0aW9uKCkgeyB0aGlzLnByZXZlbnREZWZhdWx0KCk7IH0gfV0pOyAgICAgICAgICAgICAgICBpZiAoZXZlbnQgJiYgZXZlbnQuZGVmYXVsdFByZXZlbnRlZCkgeyAgICAgICAgICAgICAgICByZXR1cm47ICAgICAgICAgfSAgICAgICAgY29uc3QgZ2Zvcm1XcmFwcGVyRGl2ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoICJnZm9ybV93cmFwcGVyXzMiICk7ICAgICAgICBpZiAoIGdmb3JtV3JhcHBlckRpdiApIHsgICAgICAgICAgICBjb25zdCB2aXNpYmlsaXR5U3BhbiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoICJzcGFuIiApOyAgICAgICAgICAgIHZpc2liaWxpdHlTcGFuLmlkID0gImdmb3JtX3Zpc2liaWxpdHlfdGVzdF8zIjsgICAgICAgICAgICBnZm9ybVdyYXBwZXJEaXYuaW5zZXJ0QWRqYWNlbnRFbGVtZW50KCAiYWZ0ZXJlbmQiLCB2aXNpYmlsaXR5U3BhbiApOyAgICAgICAgfSAgICAgICAgY29uc3QgdmlzaWJpbGl0eVRlc3REaXYgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCggImdmb3JtX3Zpc2liaWxpdHlfdGVzdF8zIiApOyAgICAgICAgbGV0IHBvc3RSZW5kZXJGaXJlZCA9IGZhbHNlOyAgICAgICAgICAgICAgICBmdW5jdGlvbiB0cmlnZ2VyUG9zdFJlbmRlcigpIHsgICAgICAgICAgICBpZiAoIHBvc3RSZW5kZXJGaXJlZCApIHsgICAgICAgICAgICAgICAgcmV0dXJuOyAgICAgICAgICAgIH0gICAgICAgICAgICBwb3N0UmVuZGVyRmlyZWQgPSB0cnVlOyAgICAgICAgICAgIGpRdWVyeSggZG9jdW1lbnQgKS50cmlnZ2VyKCAnZ2Zvcm1fcG9zdF9yZW5kZXInLCBbMywgY3VycmVudF9wYWdlXSApOyAgICAgICAgICAgIGdmb3JtLnV0aWxzLnRyaWdnZXIoIHsgZXZlbnQ6ICdnZm9ybS9wb3N0UmVuZGVyJywgbmF0aXZlOiBmYWxzZSwgZGF0YTogeyBmb3JtSWQ6IDMsIGN1cnJlbnRQYWdlOiBjdXJyZW50X3BhZ2UgfSB9ICk7ICAgICAgICAgICAgZ2Zvcm0udXRpbHMudHJpZ2dlciggeyBldmVudDogJ2dmb3JtL3Bvc3RfcmVuZGVyJywgbmF0aXZlOiBmYWxzZSwgZGF0YTogeyBmb3JtSWQ6IDMsIGN1cnJlbnRQYWdlOiBjdXJyZW50X3BhZ2UgfSB9ICk7ICAgICAgICAgICAgaWYgKCB2aXNpYmlsaXR5VGVzdERpdiApIHsgICAgICAgICAgICAgICAgdmlzaWJpbGl0eVRlc3REaXYucGFyZW50Tm9kZS5yZW1vdmVDaGlsZCggdmlzaWJpbGl0eVRlc3REaXYgKTsgICAgICAgICAgICB9ICAgICAgICB9ICAgICAgICBmdW5jdGlvbiBkZWJvdW5jZSggZnVuYywgd2FpdCwgaW1tZWRpYXRlICkgeyAgICAgICAgICAgIHZhciB0aW1lb3V0OyAgICAgICAgICAgIHJldHVybiBmdW5jdGlvbigpIHsgICAgICAgICAgICAgICAgdmFyIGNvbnRleHQgPSB0aGlzLCBhcmdzID0gYXJndW1lbnRzOyAgICAgICAgICAgICAgICB2YXIgbGF0ZXIgPSBmdW5jdGlvbigpIHsgICAgICAgICAgICAgICAgICAgIHRpbWVvdXQgPSBudWxsOyAgICAgICAgICAgICAgICAgICAgaWYgKCAhaW1tZWRpYXRlICkgZnVuYy5hcHBseSggY29udGV4dCwgYXJncyApOyAgICAgICAgICAgICAgICB9OyAgICAgICAgICAgICAgICB2YXIgY2FsbE5vdyA9IGltbWVkaWF0ZSAmJiAhdGltZW91dDsgICAgICAgICAgICAgICAgY2xlYXJUaW1lb3V0KCB0aW1lb3V0ICk7ICAgICAgICAgICAgICAgIHRpbWVvdXQgPSBzZXRUaW1lb3V0KCBsYXRlciwgd2FpdCApOyAgICAgICAgICAgICAgICBpZiAoIGNhbGxOb3cgKSBmdW5jLmFwcGx5KCBjb250ZXh0LCBhcmdzICk7ICAgICAgICAgICAgfTsgICAgICAgIH0gICAgICAgIGNvbnN0IGRlYm91bmNlZFRyaWdnZXJQb3N0UmVuZGVyID0gZGVib3VuY2UoIGZ1bmN0aW9uKCkgeyAgICAgICAgICAgIHRyaWdnZXJQb3N0UmVuZGVyKCk7ICAgICAgICB9LCAyMDAgKTsgICAgICAgIGlmICggdmlzaWJpbGl0eVRlc3REaXYgJiYgdmlzaWJpbGl0eVRlc3REaXYub2Zmc2V0UGFyZW50ID09PSBudWxsICkgeyAgICAgICAgICAgIGNvbnN0IG9ic2VydmVyID0gbmV3IE11dGF0aW9uT2JzZXJ2ZXIoICggbXV0YXRpb25zICkgPT4geyAgICAgICAgICAgICAgICBtdXRhdGlvbnMuZm9yRWFjaCggKCBtdXRhdGlvbiApID0+IHsgICAgICAgICAgICAgICAgICAgIGlmICggbXV0YXRpb24udHlwZSA9PT0gJ2F0dHJpYnV0ZXMnICYmIHZpc2liaWxpdHlUZXN0RGl2Lm9mZnNldFBhcmVudCAhPT0gbnVsbCApIHsgICAgICAgICAgICAgICAgICAgICAgICBkZWJvdW5jZWRUcmlnZ2VyUG9zdFJlbmRlcigpOyAgICAgICAgICAgICAgICAgICAgICAgIG9ic2VydmVyLmRpc2Nvbm5lY3QoKTsgICAgICAgICAgICAgICAgICAgIH0gICAgICAgICAgICAgICAgfSk7ICAgICAgICAgICAgfSk7ICAgICAgICAgICAgb2JzZXJ2ZXIub2JzZXJ2ZSggZG9jdW1lbnQuYm9keSwgeyAgICAgICAgICAgICAgICBhdHRyaWJ1dGVzOiB0cnVlLCAgICAgICAgICAgICAgICBjaGlsZExpc3Q6IGZhbHNlLCAgICAgICAgICAgICAgICBzdWJ0cmVlOiB0cnVlLCAgICAgICAgICAgICAgICBhdHRyaWJ1dGVGaWx0ZXI6IFsgJ3N0eWxlJywgJ2NsYXNzJyBdLCAgICAgICAgICAgIH0pOyAgICAgICAgfSBlbHNlIHsgICAgICAgICAgICB0cmlnZ2VyUG9zdFJlbmRlcigpOyAgICAgICAgfSAgICB9ICk7fSApOyAKLyogXV0mZ3Q7ICovCg=="></script>
+
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-1243902246" class="col hide-for-small medium-2 small-12 large-2"  >
+				<div class="col-inner text-center"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1987750485">
+								<div class="img-inner dark" style="margin:10em 0px 0px 0px;">
+			<img decoding="async" width="53" height="54" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2053%2054%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/Imagen-7.png" class="lazy-load attachment-original size-original" alt="" />						
+					</div>
+								
+<style>
+#image_1987750485 {
+  width: 20%;
+}
+</style>
+	</div>
+	
+		</div>
+				
+<style>
+#col-1243902246 > .col-inner {
+  padding: 0px 0px 0px 0px;
+}
+</style>
+	</div>
+
+	
+
+	<div id="col-833641943" class="col small-12 large-12"  >
+				<div class="col-inner"  >
+			
+			
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_2029300125">
+								<div class="img-inner dark" style="margin:0px 0px 0px 0px;">
+			<img decoding="async" width="1220" height="583" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%201220%20583%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="https://monami.com.ar/wp-content/uploads/2023/08/img-final-1.png" class="lazy-load attachment-original size-original" alt="" srcset="" data-srcset="https://monami.com.ar/wp-content/uploads/2023/08/img-final-1.png 1220w, https://monami.com.ar/wp-content/uploads/2023/08/img-final-1-300x143.png 300w, https://monami.com.ar/wp-content/uploads/2023/08/img-final-1-1024x489.png 1024w, https://monami.com.ar/wp-content/uploads/2023/08/img-final-1-768x367.png 768w, https://monami.com.ar/wp-content/uploads/2023/08/img-final-1-247x118.png 247w, https://monami.com.ar/wp-content/uploads/2023/08/img-final-1-400x191.png 400w" sizes="auto, (max-width: 1220px) 100vw, 1220px" />						
+					</div>
+								
+<style>
+#image_2029300125 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+		</div>
+				
+<style>
+#col-833641943 > .col-inner {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+</style>
+	</div>
+
+	
+
+<style>
+#row-400604919 > .col > .col-inner {
+  padding: 0px 0px 0px 0px;
+}
+</style>
+</div>
+		</div>
+
+		
+<style>
+#section_1101090209 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 0px;
+  background-color: rgb(225, 220, 206);
+}
+#section_1101090209 .ux-shape-divider--top svg {
+  height: 150px;
+  --divider-top-width: 100%;
+}
+@media (min-width:550px) {
+  #section_1101090209 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+</style>
+	</section>
+	
+
+			
+		
+</div>
+
+
+
+</main>
+
+<footer id="footer" class="footer-wrapper">
+
+	
+	<section class="section" id="section_311180269">
+		<div class="section-bg fill" >
+			<img width="423" height="423" src="https://monami.com.ar/wp-content/uploads/2023/07/plato-alimento.png" class="bg attachment-original size-original" alt="" decoding="async" loading="lazy" />						
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+
+<div class="row align-center"  id="row-830710177">
+
+
+	<div id="col-501632930" class="col medium-3 small-11 large-3"  >
+				<div class="col-inner text-center"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_260102854">
+								<div class="img-inner dark" >
+			<img width="185" height="56" src="https://monami.com.ar/wp-content/uploads/2023/07/monami-logo-blanco.png" class="attachment-original size-original" alt="" decoding="async" loading="lazy" />						
+					</div>
+								
+<style>
+#image_260102854 {
+  width: 62%;
+}
+@media (min-width:550px) {
+  #image_260102854 {
+    width: 80%;
+  }
+}
+</style>
+	</div>
+	
+
+	<div id="text-2215677268" class="text">
+		
+
+<p><span style="font-weight: 400;">¿Qué botoncito elegís hoy?</span></p>
+		
+<style>
+#text-2215677268 {
+  text-align: center;
+  color: rgb(255,255,255);
+}
+#text-2215677268 > * {
+  color: rgb(255,255,255);
+}
+</style>
+	</div>
+	
+<div class="row row-collapse row-full-width align-equal tript-redes-row"  id="row-596096090">
+
+
+	<div id="col-1342051654" class="col small-12 large-12"  >
+				<div class="col-inner"  >
+			
+			
+
+<div class="social-icons follow-icons" style="font-size:91%"><a href="https://www.instagram.com/monamimascotas/" target="_blank" data-label="Instagram" class="icon plain instagram tooltip" title="Síguenos en Instagram" aria-label="Síguenos en Instagram" rel="noopener nofollow" ><i class="icon-instagram" ></i></a><a href="https://api.whatsapp.com/send?phone=5491128374028" target="_blank" data-label="TikTok" class="icon plain tiktok tooltip" title="Escribinos a Whatsapp" aria-label="Escribinos a Whatsapp" rel="noopener nofollow" ><i class="icon-tiktok" ></i></a><a href="https://www.linkedin.com/company/marinicia-sa/about/" data-label="LinkedIn" target="_blank" class="icon plain linkedin tooltip" title="Síguenos en LinkedIn" aria-label="Síguenos en LinkedIn" rel="noopener nofollow" ><i class="icon-linkedin" ></i></a><a href="https://www.youtube.com/channel/UCV9YUSWG5I-9RYxjL9A2j6A" data-label="YouTube" target="_blank" class="icon plain youtube tooltip" title="Síguenos en Youtube" aria-label="Síguenos en Youtube" rel="noopener nofollow" ><i class="icon-youtube" ></i></a></div>
+
+
+		</div>
+					</div>
+
+	
+
+</div>
+
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-2089584321" class="col tript-footer-colum-perro medium-3 small-11 large-3"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1341047829">
+				<div data-parallax-fade="true" data-parallax="1">				<div class="img-inner dark" >
+			<img width="258" height="245" src="https://monami.com.ar/wp-content/uploads/2023/07/footer-perro.svg" class="attachment-original size-original" alt="" decoding="async" loading="lazy" />						
+					</div>
+				</div>				
+<style>
+#image_1341047829 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+				
+<style>
+#col-2089584321 > .col-inner {
+  padding: 0px 5em 0px 5em;
+  margin: 0px 0px 0px 0px;
+}
+@media (min-width:550px) {
+  #col-2089584321 > .col-inner {
+    padding: 0px 0px 0px 0px;
+  }
+}
+</style>
+	</div>
+
+	
+
+	<div id="col-1640957859" class="col medium-3 small-9 large-3"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div id="text-363010591" class="text">
+		
+
+<h3>Quiénes somos </h3>
+<p><a href="/sobre-nosotros/"><span style="font-weight: 400;">Sobre Marini &amp; Cía. </span></a></p>
+<p><a href="/contacto-directo/"><span style="font-weight: 400;">Contacto Directo.</span></a></p>
+<p><a href="/vacantes-para-trabajar-con-nosotros/"><span style="font-weight: 400;">Vacantes para trabajar con nosotros. </span></a></p>
+		
+<style>
+#text-363010591 {
+  font-size: 0.9rem;
+  color: rgb(255,255,255);
+}
+#text-363010591 > * {
+  color: rgb(255,255,255);
+}
+</style>
+	</div>
+	
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-1590964833" class="col medium-3 small-9 large-3"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div id="text-3847375036" class="text">
+		
+
+<h3>Info que te interesa</h3>
+<p><a href="/sobre-nuestros-envios/"><span style="font-weight: 400;">Sobre nuestros envíos.</span></a></p>
+<p><a href="/politicas-de-devoluciones/"><span style="font-weight: 400;">Políticas de devoluciones.</span></a></p>
+<p><a href="/tu-privacidad/"><span style="font-weight: 400;">Tu privacidad. </span></a></p>
+		
+<style>
+#text-3847375036 {
+  font-size: 0.9rem;
+  color: rgb(255,255,255);
+}
+#text-3847375036 > * {
+  color: rgb(255,255,255);
+}
+</style>
+	</div>
+	
+
+		</div>
+					</div>
+
+	
+
+</div>
+		<div class="hide-for-medium">
+				
+
+<div class="demo-wrapper " style="width: 80px;overflow: hidden;color: #fff;text-align: center;padding: 0;margin: 0;position: fixed;right: 0;bottom: 1%;z-index: 25">
+
+<a class="demo-button" href="https://web.whatsapp.com/send?phone=5491128374028&amp;source=&amp;data=" target="_blank" rel="noopener noreferrer" data-animate="fadeInRight" data-animated="true"> <img width="200" height="200" style="width: 50px;margin-bottom: 5px" src="https://monami.com.ar/wp-content/uploads/2022/07/whatsapp-1-200px.png" /></a>
+
+</div>
+		</div>
+	
+		<div class="show-for-small">
+				
+
+<div class="demo-wrapper " style="width: 80px;overflow: hidden;color: #fff;text-align: center;padding: 0;margin: 0;position: fixed;right: 0;bottom: 1%;z-index: 25">
+
+<a class="demo-button" href="https://api.whatsapp.com/send?phone=5491128374028&amp;source=&amp;data=" target="_blank" rel="noopener noreferrer" data-animate="fadeInRight" data-animated="true"> <img width="200" height="200" style="width: 50px;margin-bottom: 5px" src="https://monami.com.ar/wp-content/uploads/2022/07/whatsapp-1-200px.png" /></a>
+
+</div>
+		</div>
+	
+
+		</div>
+
+		
+<style>
+#section_311180269 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #c91717;
+}
+#section_311180269 .section-bg img {
+  object-position: 70em 15em;
+}
+</style>
+	</section>
+	
+<div class="absolute-footer light medium-text-center small-text-center">
+  <div class="container clearfix">
+
+          <div class="footer-secondary pull-right">
+                  <div class="footer-text inline-block small-block">
+            <div class="row row-small align-equal"  id="row-1012228819">
+
+
+	<div id="col-1370505983" class="col medium-6 small-6 large-6"  >
+				<div class="col-inner text-center"  >
+			
+			
+
+<a href="/arrepentimiento/" class="button primary is-outline is-smaller btn-arrepentimiento"  >
+		<span>Botón de arrepentimiento</span>
+	</a>
+
+
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-1017626853" class="col medium-6 small-6 large-6"  >
+				<div class="col-inner"  >
+			
+			
+
+
+
+<p><a href="http://qr.afip.gob.ar/?qr=,," target="_F960AFIPInfo" rel="noopener"><img class=" ls-is-cached lazyloaded" src="https://ruffocafe.com/wp-content/uploads/2021/12/afip-1.jpg" border="0" data-src="/wp-content/uploads/2017/12/data_web-2.jpg" /></a></p>
+
+
+		</div>
+					</div>
+
+	
+
+</div>          </div>
+                      </div>
+    
+    <div class="footer-primary pull-left">
+            <div class="copyright-footer">
+        2025 ©   Mon Ami |   <strong>Desarrollado por  </strong>  <a href="https://triptongo.com.ar/" target="_blank"><img style="width: 40px;" src="https://monami.com.ar/wp-content/uploads/2023/09/triptongo-icon-gris.svg"></a>      </div>
+          </div>
+  </div>
+</div>
+
+<a href="#top" class="back-to-top button icon invert plain fixed bottom z-1 is-outline hide-for-medium circle" id="top-link" aria-label="Ir arriba"><i class="icon-angle-up" ></i></a>
+
+</footer>
+
+</div>
+
+<div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+
+	
+	<div class="sidebar-menu no-scrollbar ">
+
+		<div class="sidebar-menu-top-content"><div style="content: url(/wp-content/uploads/2023/07/monami-logo-rojo.png); width: 10em!important; margin: 0 auto; padding-bottom: 2em;"></div>
+					<ul class="nav nav-sidebar nav-vertical nav-uppercase" data-tab="1">
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-31 current_page_item menu-item-638"><a href="https://monami.com.ar/" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://monami.com.ar/tienda/">Tienda</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409"><a href="https://monami.com.ar/productos/">Productos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1943"><a href="https://monami.com.ar/sobre-nosotros/">Sobre nosotros</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6200"><a href="https://monami.com.ar/monjournal/">Mon Journal</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16848"><a href="https://monami.com.ar/puntos-de-venta/">Puntos de venta</a></li>
+<li class="header-block"><div class="header-block-block-1"><div class="row row-collapse row-full-width align-equal tript-redes-row"  id="row-1819872332">
+
+
+	<div id="col-683714719" class="col small-12 large-12"  >
+				<div class="col-inner"  >
+			
+			
+
+<div class="social-icons follow-icons" style="font-size:91%"><a href="https://www.instagram.com/monamimascotas/" target="_blank" data-label="Instagram" class="icon plain instagram tooltip" title="Síguenos en Instagram" aria-label="Síguenos en Instagram" rel="noopener nofollow" ><i class="icon-instagram" ></i></a><a href="https://api.whatsapp.com/send?phone=5491128374028" target="_blank" data-label="TikTok" class="icon plain tiktok tooltip" title="Escribinos a Whatsapp" aria-label="Escribinos a Whatsapp" rel="noopener nofollow" ><i class="icon-tiktok" ></i></a><a href="https://www.linkedin.com/company/marinicia-sa/about/" data-label="LinkedIn" target="_blank" class="icon plain linkedin tooltip" title="Síguenos en LinkedIn" aria-label="Síguenos en LinkedIn" rel="noopener nofollow" ><i class="icon-linkedin" ></i></a><a href="https://www.youtube.com/channel/UCV9YUSWG5I-9RYxjL9A2j6A" data-label="YouTube" target="_blank" class="icon plain youtube tooltip" title="Síguenos en Youtube" aria-label="Síguenos en Youtube" rel="noopener nofollow" ><i class="icon-youtube" ></i></a></div>
+
+
+		</div>
+					</div>
+
+	
+
+</div></div></li>			</ul>
+		
+		
+	</div>
+
+	
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/Monami%20Child\/*","\/wp-content\/themes\/flatsome\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+    <div id="login-form-popup" class="lightbox-content mfp-hide">
+            	<div class="woocommerce">
+      		<div class="woocommerce-notices-wrapper"></div>
+<div class="account-container lightbox-inner">
+
+	
+			<div class="account-login-inner">
+
+				<h3 class="uppercase">Acceder</h3>
+
+				<form class="woocommerce-form woocommerce-form-login login" method="post">
+
+					
+					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+						<label for="username">Nombre de usuario o correo electrónico&nbsp;<span class="required" aria-hidden="true">*</span><span class="screen-reader-text">Obligatorio</span></label>
+						<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" required aria-required="true" />					</p>
+					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+						<label for="password">Contraseña&nbsp;<span class="required" aria-hidden="true">*</span><span class="screen-reader-text">Obligatorio</span></label>
+						<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" required aria-required="true" />
+					</p>
+
+					
+					<p class="form-row">
+						<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+							<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Recuérdame</span>
+						</label>
+						<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="6f4b8d9a16" /><input type="hidden" name="_wp_http_referer" value="/" />						<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Acceso">Acceso</button>
+					</p>
+					<p class="woocommerce-LostPassword lost_password">
+						<a href="https://monami.com.ar/mi-cuenta/contrasena-perdida/">¿Olvidaste la contraseña?</a>
+					</p>
+
+					
+				</form>
+			</div>
+
+			
+</div>
+
+		</div>
+      	    </div>
+  <div id='pys_ajax_events'></div>        <script defer src="data:text/javascript;base64,CiAgICAgICAgICAgIHZhciBub2RlID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeUNsYXNzTmFtZSgnd29vY29tbWVyY2UtbWVzc2FnZScpWzBdOwogICAgICAgICAgICBpZihub2RlICYmIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdweXNfbGF0ZV9ldmVudCcpKSB7CiAgICAgICAgICAgICAgICB2YXIgbWVzc2FnZVRleHQgPSBub2RlLnRleHRDb250ZW50LnRyaW0oKTsKICAgICAgICAgICAgICAgIGlmKCFtZXNzYWdlVGV4dCkgewogICAgICAgICAgICAgICAgICAgIG5vZGUuc3R5bGUuZGlzcGxheSA9ICdub25lJzsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIA=="></script>
+        <noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=553985478292721&ev=PageView&noscript=1&cd%5Bpage_title%5D=Home&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=31&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=monami.com.ar%2F" alt=""></noscript>
+	<script type="text/javascript" defer src="data:text/javascript;base64,CgkJKGZ1bmN0aW9uICgpIHsKCQkJdmFyIGMgPSBkb2N1bWVudC5ib2R5LmNsYXNzTmFtZTsKCQkJYyA9IGMucmVwbGFjZSgvd29vY29tbWVyY2Utbm8tanMvLCAnd29vY29tbWVyY2UtanMnKTsKCQkJZG9jdW1lbnQuYm9keS5jbGFzc05hbWUgPSBjOwoJCX0pKCk7Cgk="></script>
+	<link rel='stylesheet' id='wc-blocks-style-css' href='https://monami.com.ar/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-9.7.1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #c91717;--wp--preset--color--secondary: #2fb5d2;--wp--preset--color--success: #5d9164;--wp--preset--color--alert: #c91717;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--cardo: Cardo;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){margin-left: auto !important;margin-right: auto !important;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: none;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-success-color{color: var(--wp--preset--color--success) !important;}.has-alert-color{color: var(--wp--preset--color--alert) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-success-background-color{background-color: var(--wp--preset--color--success) !important;}.has-alert-background-color{background-color: var(--wp--preset--color--alert) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-success-border-color{border-color: var(--wp--preset--color--success) !important;}.has-alert-border-color{border-color: var(--wp--preset--color--alert) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-cardo-font-family{font-family: var(--wp--preset--font-family--cardo) !important;}
+</style>
+<script type="text/javascript" id="woocommerce-js-extra" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgd29vY29tbWVyY2VfcGFyYW1zID0geyJhamF4X3VybCI6Ilwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwid2NfYWpheF91cmwiOiJcLz93Yy1hamF4PSUlZW5kcG9pbnQlJSIsImkxOG5fcGFzc3dvcmRfc2hvdyI6Ik1vc3RyYXIgY29udHJhc2VcdTAwZjFhIiwiaTE4bl9wYXNzd29yZF9oaWRlIjoiT2N1bHRhciBjb250cmFzZVx1MDBmMWEifTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.7.1" id="woocommerce-js" data-wp-strategy="defer" defer></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-search.js?ver=3.19.5" id="flatsome-live-search-js" defer></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.7.1" id="sourcebuster-js-js" defer></script>
+<script type="text/javascript" id="wc-order-attribution-js-extra" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgd2Nfb3JkZXJfYXR0cmlidXRpb24gPSB7InBhcmFtcyI6eyJsaWZldGltZSI6MS4wZS01LCJzZXNzaW9uIjozMCwiYmFzZTY0IjpmYWxzZSwiYWpheHVybCI6Imh0dHBzOlwvXC9tb25hbWkuY29tLmFyXC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJwcmVmaXgiOiJ3Y19vcmRlcl9hdHRyaWJ1dGlvbl8iLCJhbGxvd1RyYWNraW5nIjp0cnVlfSwiZmllbGRzIjp7InNvdXJjZV90eXBlIjoiY3VycmVudC50eXAiLCJyZWZlcnJlciI6ImN1cnJlbnRfYWRkLnJmIiwidXRtX2NhbXBhaWduIjoiY3VycmVudC5jbXAiLCJ1dG1fc291cmNlIjoiY3VycmVudC5zcmMiLCJ1dG1fbWVkaXVtIjoiY3VycmVudC5tZG0iLCJ1dG1fY29udGVudCI6ImN1cnJlbnQuY250IiwidXRtX2lkIjoiY3VycmVudC5pZCIsInV0bV90ZXJtIjoiY3VycmVudC50cm0iLCJ1dG1fc291cmNlX3BsYXRmb3JtIjoiY3VycmVudC5wbHQiLCJ1dG1fY3JlYXRpdmVfZm9ybWF0IjoiY3VycmVudC5mbXQiLCJ1dG1fbWFya2V0aW5nX3RhY3RpYyI6ImN1cnJlbnQudGN0Iiwic2Vzc2lvbl9lbnRyeSI6ImN1cnJlbnRfYWRkLmVwIiwic2Vzc2lvbl9zdGFydF90aW1lIjoiY3VycmVudF9hZGQuZmQiLCJzZXNzaW9uX3BhZ2VzIjoic2Vzc2lvbi5wZ3MiLCJzZXNzaW9uX2NvdW50IjoidWRhdGEudnN0IiwidXNlcl9hZ2VudCI6InVkYXRhLnVhZyJ9fTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.7.1" id="wc-order-attribution-js" defer></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js" defer></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js" defer></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp3cC5pMThuLnNldExvY2FsZURhdGEoIHsgJ3RleHQgZGlyZWN0aW9uXHUwMDA0bHRyJzogWyAnbHRyJyBdIH0gKTsKLyogXV0+ICovCg=="></script>
+<script type="text/javascript" id="wp-a11y-js-translations" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwooIGZ1bmN0aW9uKCBkb21haW4sIHRyYW5zbGF0aW9ucyApIHsKCXZhciBsb2NhbGVEYXRhID0gdHJhbnNsYXRpb25zLmxvY2FsZV9kYXRhWyBkb21haW4gXSB8fCB0cmFuc2xhdGlvbnMubG9jYWxlX2RhdGEubWVzc2FnZXM7Cglsb2NhbGVEYXRhWyIiXS5kb21haW4gPSBkb21haW47Cgl3cC5pMThuLnNldExvY2FsZURhdGEoIGxvY2FsZURhdGEsIGRvbWFpbiApOwp9ICkoICJkZWZhdWx0IiwgeyJ0cmFuc2xhdGlvbi1yZXZpc2lvbi1kYXRlIjoiMjAyNS0wMy0yOSAyMDowMzozNSswMDAwIiwiZ2VuZXJhdG9yIjoiR2xvdFByZXNzXC80LjAuMSIsImRvbWFpbiI6Im1lc3NhZ2VzIiwibG9jYWxlX2RhdGEiOnsibWVzc2FnZXMiOnsiIjp7ImRvbWFpbiI6Im1lc3NhZ2VzIiwicGx1cmFsLWZvcm1zIjoibnBsdXJhbHM9MjsgcGx1cmFsPW4gIT0gMTsiLCJsYW5nIjoiZXMifSwiTm90aWZpY2F0aW9ucyI6WyJBdmlzb3MiXX19LCJjb21tZW50Ijp7InJlZmVyZW5jZSI6IndwLWluY2x1ZGVzXC9qc1wvZGlzdFwvYTExeS5qcyJ9fSApOwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-includes/js/dist/a11y.min.js?ver=3156534cc54473497e14" id="wp-a11y-js" defer></script>
+<script type="text/javascript" defer src="https://monami.com.ar/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=639b4ac21c17c9dc304b05db4a3d3293" id="gform_gravityforms_theme_vendors-js"></script>
+<script type="text/javascript" id="gform_gravityforms_theme-js-extra" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgZ2Zvcm1fdGhlbWVfY29uZmlnID0geyJjb21tb24iOnsiZm9ybSI6eyJob25leXBvdCI6eyJ2ZXJzaW9uX2hhc2giOiIxNzkxZWFhM2E2OTgzM2IwMzgzMTA2ZGUxYmNhZDMyMSJ9LCJhamF4Ijp7ImFqYXh1cmwiOiJodHRwczpcL1wvbW9uYW1pLmNvbS5hclwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwiYWpheF9zdWJtaXNzaW9uX25vbmNlIjoiZDBhNGMxZmYwMiIsImkxOG4iOnsic3RlcF9hbm5vdW5jZW1lbnQiOiJQYXNvICUxJHMgZGUgJTIkcywgJTMkcyIsInVua25vd25fZXJyb3IiOiJTZSBoYSBwcm9kdWNpZG8gdW4gZXJyb3IgZGVzY29ub2NpZG8gYWwgcHJvY2VzYXIgdHUgc29saWNpdHVkLiBQb3IgZmF2b3IsIGludFx1MDBlOW50YWxvIGRlIG51ZXZvLiJ9fX19LCJobXJfZGV2IjoiIiwicHVibGljX3BhdGgiOiJodHRwczpcL1wvbW9uYW1pLmNvbS5hclwvd3AtY29udGVudFwvcGx1Z2luc1wvZ3Jhdml0eWZvcm1zXC9hc3NldHNcL2pzXC9kaXN0XC8iLCJjb25maWdfbm9uY2UiOiJiMThhOWUzODRjIn07Ci8qIF1dPiAqLwo="></script>
+<script type="text/javascript" defer src="https://monami.com.ar/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=dc91b64a15c979eb9acace3fe2754b5f" id="gform_gravityforms_theme-js"></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-includes/js/hoverIntent.min.js?ver=1.10.2" id="hoverIntent-js" defer></script>
+<script type="text/javascript" id="flatsome-js-js-extra" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgZmxhdHNvbWVWYXJzID0geyJ0aGVtZSI6eyJ2ZXJzaW9uIjoiMy4xOS41In0sImFqYXh1cmwiOiJodHRwczpcL1wvbW9uYW1pLmNvbS5hclwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwicnRsIjoiIiwic3RpY2t5X2hlaWdodCI6IjcwIiwic3RpY2t5SGVhZGVySGVpZ2h0IjoiMCIsInNjcm9sbFBhZGRpbmdUb3AiOiIwIiwiYXNzZXRzX3VybCI6Imh0dHBzOlwvXC9tb25hbWkuY29tLmFyXC93cC1jb250ZW50XC90aGVtZXNcL2ZsYXRzb21lXC9hc3NldHNcLyIsImxpZ2h0Ym94Ijp7ImNsb3NlX21hcmt1cCI6IjxidXR0b24gdGl0bGU9XCIldGl0bGUlXCIgdHlwZT1cImJ1dHRvblwiIGNsYXNzPVwibWZwLWNsb3NlXCI+PHN2ZyB4bWxucz1cImh0dHA6XC9cL3d3dy53My5vcmdcLzIwMDBcL3N2Z1wiIHdpZHRoPVwiMjhcIiBoZWlnaHQ9XCIyOFwiIHZpZXdCb3g9XCIwIDAgMjQgMjRcIiBmaWxsPVwibm9uZVwiIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiIHN0cm9rZS13aWR0aD1cIjJcIiBzdHJva2UtbGluZWNhcD1cInJvdW5kXCIgc3Ryb2tlLWxpbmVqb2luPVwicm91bmRcIiBjbGFzcz1cImZlYXRoZXIgZmVhdGhlci14XCI+PGxpbmUgeDE9XCIxOFwiIHkxPVwiNlwiIHgyPVwiNlwiIHkyPVwiMThcIj48XC9saW5lPjxsaW5lIHgxPVwiNlwiIHkxPVwiNlwiIHgyPVwiMThcIiB5Mj1cIjE4XCI+PFwvbGluZT48XC9zdmc+PFwvYnV0dG9uPiIsImNsb3NlX2J0bl9pbnNpZGUiOmZhbHNlfSwidXNlciI6eyJjYW5fZWRpdF9wYWdlcyI6ZmFsc2V9LCJpMThuIjp7Im1haW5NZW51IjoiTWVuXHUwMGZhIFByaW5jaXBhbCIsInRvZ2dsZUJ1dHRvbiI6IlRvZ2dsZSJ9LCJvcHRpb25zIjp7ImNvb2tpZV9ub3RpY2VfdmVyc2lvbiI6IjEiLCJzd2F0Y2hlc19sYXlvdXQiOmZhbHNlLCJzd2F0Y2hlc19kaXNhYmxlX2Rlc2VsZWN0IjpmYWxzZSwic3dhdGNoZXNfYm94X3NlbGVjdF9ldmVudCI6ZmFsc2UsInN3YXRjaGVzX2JveF9iZWhhdmlvcl9zZWxlY3RlZCI6ZmFsc2UsInN3YXRjaGVzX2JveF91cGRhdGVfdXJscyI6IjEiLCJzd2F0Y2hlc19ib3hfcmVzZXQiOmZhbHNlLCJzd2F0Y2hlc19ib3hfcmVzZXRfbGltaXRlZCI6ZmFsc2UsInN3YXRjaGVzX2JveF9yZXNldF9leHRlbnQiOmZhbHNlLCJzd2F0Y2hlc19ib3hfcmVzZXRfdGltZSI6MzAwLCJzZWFyY2hfcmVzdWx0X2xhdGVuY3kiOiIxMDAwIn0sImlzX21pbmlfY2FydF9yZXZlYWwiOiIxIn07Ci8qIF1dPiAqLwo="></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/themes/flatsome/assets/js/flatsome.js?ver=8e60d746741250b4dd4e" id="flatsome-js-js" defer></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/themes/flatsome/inc/extensions/flatsome-lazy-load/flatsome-lazy-load.js?ver=3.19.5" id="flatsome-lazy-js" defer></script>
+<script type="text/javascript" src="https://monami.com.ar/wp-content/themes/flatsome/assets/js/woocommerce.js?ver=dd6035ce106022a74757" id="flatsome-theme-woocommerce-js-js" defer></script>
+<script type="text/javascript" async data-no-optimize="1" src="https://monami.com.ar/wp-content/plugins/perfmatters/vendor/instant-page/pminstantpage.min.js?ver=2.4.1" id="perfmatters-instant-page-js"></script>
+<script type="text/javascript" id="wc-cart-fragments-js-extra" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgd2NfY2FydF9mcmFnbWVudHNfcGFyYW1zID0geyJhamF4X3VybCI6Ilwvd3AtYWRtaW5cL2FkbWluLWFqYXgucGhwIiwid2NfYWpheF91cmwiOiJcLz93Yy1hamF4PSUlZW5kcG9pbnQlJSIsImNhcnRfaGFzaF9rZXkiOiJ3Y19jYXJ0X2hhc2hfOTU1ZjBkZTY2YjY3YTFjMmI3OTVhMWVkZDg0ZGJhMmEiLCJmcmFnbWVudF9uYW1lIjoid2NfZnJhZ21lbnRzXzk1NWYwZGU2NmI2N2ExYzJiNzk1YTFlZGQ4NGRiYTJhIiwicmVxdWVzdF90aW1lb3V0IjoiNTAwMCJ9OwovKiBdXT4gKi8K"></script>
+<script type="text/javascript" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwogZ2Zvcm0uaW5pdGlhbGl6ZU9uTG9hZGVkKCBmdW5jdGlvbigpIHsgalF1ZXJ5KGRvY3VtZW50KS5vbignZ2Zvcm1fcG9zdF9yZW5kZXInLCBmdW5jdGlvbihldmVudCwgZm9ybUlkLCBjdXJyZW50UGFnZSl7aWYoZm9ybUlkID09IDMpIHt9IH0gKTtqUXVlcnkoZG9jdW1lbnQpLm9uKCdnZm9ybV9wb3N0X2NvbmRpdGlvbmFsX2xvZ2ljJywgZnVuY3Rpb24oZXZlbnQsIGZvcm1JZCwgZmllbGRzLCBpc0luaXQpe30gKSB9ICk7IAovKiBdXT4gKi8K"></script>
+<script type="text/javascript" defer src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwogZ2Zvcm0uaW5pdGlhbGl6ZU9uTG9hZGVkKCBmdW5jdGlvbigpIHtqUXVlcnkoZG9jdW1lbnQpLnRyaWdnZXIoImdmb3JtX3ByZV9wb3N0X3JlbmRlciIsIFt7IGZvcm1JZDogIjMiLCBjdXJyZW50UGFnZTogIjEiLCBhYm9ydDogZnVuY3Rpb24oKSB7IHRoaXMucHJldmVudERlZmF1bHQoKTsgfSB9XSk7ICAgICAgICAgICAgICAgIGlmIChldmVudCAmJiBldmVudC5kZWZhdWx0UHJldmVudGVkKSB7ICAgICAgICAgICAgICAgIHJldHVybjsgICAgICAgICB9ICAgICAgICBjb25zdCBnZm9ybVdyYXBwZXJEaXYgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCggImdmb3JtX3dyYXBwZXJfMyIgKTsgICAgICAgIGlmICggZ2Zvcm1XcmFwcGVyRGl2ICkgeyAgICAgICAgICAgIGNvbnN0IHZpc2liaWxpdHlTcGFuID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCggInNwYW4iICk7ICAgICAgICAgICAgdmlzaWJpbGl0eVNwYW4uaWQgPSAiZ2Zvcm1fdmlzaWJpbGl0eV90ZXN0XzMiOyAgICAgICAgICAgIGdmb3JtV3JhcHBlckRpdi5pbnNlcnRBZGphY2VudEVsZW1lbnQoICJhZnRlcmVuZCIsIHZpc2liaWxpdHlTcGFuICk7ICAgICAgICB9ICAgICAgICBjb25zdCB2aXNpYmlsaXR5VGVzdERpdiA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCAiZ2Zvcm1fdmlzaWJpbGl0eV90ZXN0XzMiICk7ICAgICAgICBsZXQgcG9zdFJlbmRlckZpcmVkID0gZmFsc2U7ICAgICAgICAgICAgICAgIGZ1bmN0aW9uIHRyaWdnZXJQb3N0UmVuZGVyKCkgeyAgICAgICAgICAgIGlmICggcG9zdFJlbmRlckZpcmVkICkgeyAgICAgICAgICAgICAgICByZXR1cm47ICAgICAgICAgICAgfSAgICAgICAgICAgIHBvc3RSZW5kZXJGaXJlZCA9IHRydWU7ICAgICAgICAgICAgalF1ZXJ5KCBkb2N1bWVudCApLnRyaWdnZXIoICdnZm9ybV9wb3N0X3JlbmRlcicsIFszLCAxXSApOyAgICAgICAgICAgIGdmb3JtLnV0aWxzLnRyaWdnZXIoIHsgZXZlbnQ6ICdnZm9ybS9wb3N0UmVuZGVyJywgbmF0aXZlOiBmYWxzZSwgZGF0YTogeyBmb3JtSWQ6IDMsIGN1cnJlbnRQYWdlOiAxIH0gfSApOyAgICAgICAgICAgIGdmb3JtLnV0aWxzLnRyaWdnZXIoIHsgZXZlbnQ6ICdnZm9ybS9wb3N0X3JlbmRlcicsIG5hdGl2ZTogZmFsc2UsIGRhdGE6IHsgZm9ybUlkOiAzLCBjdXJyZW50UGFnZTogMSB9IH0gKTsgICAgICAgICAgICBpZiAoIHZpc2liaWxpdHlUZXN0RGl2ICkgeyAgICAgICAgICAgICAgICB2aXNpYmlsaXR5VGVzdERpdi5wYXJlbnROb2RlLnJlbW92ZUNoaWxkKCB2aXNpYmlsaXR5VGVzdERpdiApOyAgICAgICAgICAgIH0gICAgICAgIH0gICAgICAgIGZ1bmN0aW9uIGRlYm91bmNlKCBmdW5jLCB3YWl0LCBpbW1lZGlhdGUgKSB7ICAgICAgICAgICAgdmFyIHRpbWVvdXQ7ICAgICAgICAgICAgcmV0dXJuIGZ1bmN0aW9uKCkgeyAgICAgICAgICAgICAgICB2YXIgY29udGV4dCA9IHRoaXMsIGFyZ3MgPSBhcmd1bWVudHM7ICAgICAgICAgICAgICAgIHZhciBsYXRlciA9IGZ1bmN0aW9uKCkgeyAgICAgICAgICAgICAgICAgICAgdGltZW91dCA9IG51bGw7ICAgICAgICAgICAgICAgICAgICBpZiAoICFpbW1lZGlhdGUgKSBmdW5jLmFwcGx5KCBjb250ZXh0LCBhcmdzICk7ICAgICAgICAgICAgICAgIH07ICAgICAgICAgICAgICAgIHZhciBjYWxsTm93ID0gaW1tZWRpYXRlICYmICF0aW1lb3V0OyAgICAgICAgICAgICAgICBjbGVhclRpbWVvdXQoIHRpbWVvdXQgKTsgICAgICAgICAgICAgICAgdGltZW91dCA9IHNldFRpbWVvdXQoIGxhdGVyLCB3YWl0ICk7ICAgICAgICAgICAgICAgIGlmICggY2FsbE5vdyApIGZ1bmMuYXBwbHkoIGNvbnRleHQsIGFyZ3MgKTsgICAgICAgICAgICB9OyAgICAgICAgfSAgICAgICAgY29uc3QgZGVib3VuY2VkVHJpZ2dlclBvc3RSZW5kZXIgPSBkZWJvdW5jZSggZnVuY3Rpb24oKSB7ICAgICAgICAgICAgdHJpZ2dlclBvc3RSZW5kZXIoKTsgICAgICAgIH0sIDIwMCApOyAgICAgICAgaWYgKCB2aXNpYmlsaXR5VGVzdERpdiAmJiB2aXNpYmlsaXR5VGVzdERpdi5vZmZzZXRQYXJlbnQgPT09IG51bGwgKSB7ICAgICAgICAgICAgY29uc3Qgb2JzZXJ2ZXIgPSBuZXcgTXV0YXRpb25PYnNlcnZlciggKCBtdXRhdGlvbnMgKSA9PiB7ICAgICAgICAgICAgICAgIG11dGF0aW9ucy5mb3JFYWNoKCAoIG11dGF0aW9uICkgPT4geyAgICAgICAgICAgICAgICAgICAgaWYgKCBtdXRhdGlvbi50eXBlID09PSAnYXR0cmlidXRlcycgJiYgdmlzaWJpbGl0eVRlc3REaXYub2Zmc2V0UGFyZW50ICE9PSBudWxsICkgeyAgICAgICAgICAgICAgICAgICAgICAgIGRlYm91bmNlZFRyaWdnZXJQb3N0UmVuZGVyKCk7ICAgICAgICAgICAgICAgICAgICAgICAgb2JzZXJ2ZXIuZGlzY29ubmVjdCgpOyAgICAgICAgICAgICAgICAgICAgfSAgICAgICAgICAgICAgICB9KTsgICAgICAgICAgICB9KTsgICAgICAgICAgICBvYnNlcnZlci5vYnNlcnZlKCBkb2N1bWVudC5ib2R5LCB7ICAgICAgICAgICAgICAgIGF0dHJpYnV0ZXM6IHRydWUsICAgICAgICAgICAgICAgIGNoaWxkTGlzdDogZmFsc2UsICAgICAgICAgICAgICAgIHN1YnRyZWU6IHRydWUsICAgICAgICAgICAgICAgIGF0dHJpYnV0ZUZpbHRlcjogWyAnc3R5bGUnLCAnY2xhc3MnIF0sICAgICAgICAgICAgfSk7ICAgICAgICB9IGVsc2UgeyAgICAgICAgICAgIHRyaWdnZXJQb3N0UmVuZGVyKCk7ICAgICAgICB9ICAgIH0gKTsgCi8qIF1dPiAqLwo="></script>
+
+</body>
+</html>
